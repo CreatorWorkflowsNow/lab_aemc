@@ -122,9 +122,9 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 
 # External navigation links
 nav_external_links:
-#  - title: Lab Guide Home
-#    url: https://creatorworkflowsnow.github.io/
-#    hide_icon: true # set to true to hide the external link icon - defaults to false
+  - title: Lab Guide Home
+    url: https://creatorworkflowsnow.github.io/
+    hide_icon: false # set to true to hide the external link icon - defaults to false
 #  - title: App Engine Studio - System Administrator Guide
 #    url: https://nowlearning.servicenow.com/nowcreate?id=nc_asset&asset_id=c0054e4487425954d3be437e0ebb35f9
 #  - title: Learn more about Creator Workflows

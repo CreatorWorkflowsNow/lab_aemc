@@ -1,11 +1,11 @@
 ---
 layout: default
-title: App Intake Setup
-parent: 1 | Install
-nav_order: 190
+title: App Intake
+parent: 1 | Configure
+nav_order: 140
 ---
 
-# App Intake Setup
+# App Intake
 {: .no_toc }
 
 [Previous][PREVIOUS]{: .btn .mr-4 }
@@ -31,5 +31,5 @@ nav_order: 190
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
-[PREVIOUS]: ../20_Pipeline_and_Deployment_Setup
-[NEXT]: ../../lab_2_configure
+[PREVIOUS]: ../130_Pipeline_and_Deployment
+[NEXT]: ../../lab_2_manage

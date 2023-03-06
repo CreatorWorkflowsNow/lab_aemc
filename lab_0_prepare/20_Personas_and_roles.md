@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Personas & Roles
-parent: 0 | Prepare
+parent: 0 | Prepare & Install
 nav_order: 20
 ---
 
@@ -11,16 +11,16 @@ nav_order: 20
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
-{: .highlight}
-> This overview is for information purposes only. 
->
-> No activity required.
-
 ## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
+
+{: .highlight}
+> This part of the lab is for information purposes only. 
+>
+> No activity required.
 
 ---
 # System Administrator
@@ -39,6 +39,8 @@ definitions for the platform
 ## Role required: 
 {: .no_toc}
 - admin
+
+---
 
 # App Engine Studio Administrator
 ## Responsibilities
@@ -60,6 +62,8 @@ the platform
 - atf_test_designer
 - scan_admin
 
+---
+
 # Professional ServiceNow Developer
 ## Responsibilities
 {: .no_toc}
@@ -79,6 +83,7 @@ platform
 - atf_test_admin
 - scan_admin
 
+---
 
 # Low-Code / Citizen Developer
 ## Responsibilities
@@ -94,7 +99,7 @@ platform
 - sn_app_eng_studio.user
 
 [Previous][PREVIOUS]{: .btn .mr-4 }
-[Lab 1][NEXT]{: .btn .btn-purple }
+[Next][NEXT]{: .btn .btn-purple }
 
 [PREVIOUS]: ../10_AES_Overview
 [NEXT]: ../30_Install_Requirements

@@ -4,7 +4,7 @@ title: Overview
 nav_order: 0
 ---
 
-{: .highlight }
+{: .warning }
 > THIS GUIDE IS STILL A DRAFT
 
 # App Engine Management Center
@@ -15,8 +15,6 @@ In this lab, you will get hands-on experience setting up and managing AEMC.
 
 We will cover concepts such as Pipelines and Deployments, Onboarding Developers, and Collaborations.
 {: .fs-6 .fw-300 }
-
-[Get started Now][getStarted]{: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 {: .highlight }
 > The content in this guide applies to App Engine Studio Version 22.0.3
@@ -29,12 +27,9 @@ We will cover concepts such as Pipelines and Deployments, Onboarding Developers,
 [Lab 5][Lab5]{: .btn .btn-purple } | Application Templates
 
 
-[Lab0]: /lab_0_pre_req_info/
-[Lab1]: /lab_1_install/
-[Lab2]: /lab_2_Manage_Access/
-[Lab3]: /lab_3_Manage_App_Intake/
+[Lab0]: /lab_0_prepare/
+[Lab1]: /lab_1_configure
+[Lab2]: /lab_2_manage
+[Lab3]: /lab_3_manage
 [Lab4]: /lab_4_Manage_App_Deployment/
 [Lab5]: /lab_5_Bonus_Info/
-
-
-[getStarted]: /lab_0_pre_req_info/

@@ -1,15 +1,15 @@
 ---
 layout: default
-title: App Engine
+title: App Engine Studio
 parent: 1 | Configure
 nav_order: 120
 ---
 
-# App Engine
+# App Engine Studio
 {: .no_toc }
 
-[Previous][PREVIOUS]{: .btn .mr-4 }
-[Next][NEXT]{: .btn .btn-purple }
+Review and set up tooling in the development instance
+{: .no_toc }
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -19,12 +19,14 @@ nav_order: 120
 
 ---
 
-## App Engine Studio Guided Setup
+*In this lab, we will review and update App Engine Studio developer access to builder tools during development.*
+
+## Log in to Dev
 
 Log in to your **Dev** instance. 
 
 {: .warning}
-Be sure your application scope to **App Engine Studio**. If it is not set, use the application picker to change the current session's scope.
+Be sure your application scope is set to **App Engine Studio**. If it is not, use the application picker to change the current session's scope.
 
 ![](../images/2023-03-03-16-39-04.png)
 
@@ -38,21 +40,28 @@ Click on "**Get** **Started**"
 
 ![](../images/2023-03-06-17-01-22.png)
 
+
+# Review and set up tooling
+
 Click on **Get Started** in the **Review and setup tooling** section
 
 ![](../images/2023-03-06-17-00-41.png)
 
+## Connect Spokes
+
 Click on **Skip** in the **Connect Spokes** Section
+
+![](../images/2023-03-06-17-05-43.png)
 
 *We are skipping **Connect** **Spokes** for this lab.  In that section, you would configure credentials to different services to that they can be leveraged by App Engine Users building applications.*
 
-![](../images/2023-03-06-17-05-43.png)
+## Flow Designer access settings
 
 Click **Configure** in the **Review Flow Designer access settings** section.
 
 ![](../images/2023-03-06-17-08-18.png)
 
-## Things to consider
+**Things to consider**
 
 Here you would want to review and update App Engine Studio developer access settings to Flow Designer Resources and update as necessary.
 
@@ -60,15 +69,20 @@ Developers can leverage Flow Designer capabilities while creating logic and auto
 
 Consider restricting developer access to Flow Designer Resources using content filtering for Flow Designer. This allows administrators to manage access to Flow Designer resources and specify which features App Engine Studio users can leverage while building applications.
 
+
 ![](../images/2023-03-06-17-09-26.png)
 
 {: .note}
-> For the purposes of this lab, we are only reviewing where to manage the Flow Designer access settings
+> For the purposes of this lab, we are only reviewing where to manage the Flow Designer access settings.
+>
+> *This step is not required as part of the initial application setup.*
+
+Flow Designer access from App Engine Studio can be updated later to provide developers the editing capabilities that best suit their experience and needs.
 
 {: .highlight}
-*For more information on managing User access to Flow Designer settings, see [[Product Documentation: User access to Flow Designer]](https://docs.servicenow.com/csh?topicname=user-access-flow-designer.html&version=latest)*
+*For more information on Flow Designer resources, see [[Product Documentation: Content Filtering for Flow Designer]](https://docs.servicenow.com/csh?topicname=content-filtering-flow-designer.html)*
 
-When you are done reviewing the Flow Designer access settings, close out the modal, then click "Mark as Complete".
+When you are done reviewing the Flow Designer access settings, close out the modal, then click **Mark as Complete**.
 
 ![](../images/2023-03-06-17-15-51.png)
 
@@ -77,6 +91,8 @@ When you are done reviewing the Flow Designer access settings, close out the mod
 You should notice that the % Complete has increased on the page. 
 
 ![](../images/2023-03-06-17-17-15.png)
+
+## Review Service Catalog access settings
 
 Click **Configure** on **Review Service Catalog access settings**
 
@@ -95,8 +111,7 @@ Click **Mark as Complete** on the **Review Service Catalog access settings** sec
 
 ![](../images/2023-03-06-17-29-45.png)
 
-
-## Configure Instance Scan definitions
+## Set up an instance scan cadence in Health Center
 
 Click **Configure** in the section **Set up an instance scan cadence in Health Center**
 
@@ -108,7 +123,6 @@ Click **Configure** in the section **Set up an instance scan cadence in Health C
 > Work with your Platform Adminstrator on an overall Instance Scan strategy for Subproduction environments. 
 
 ![](../images/2023-03-06-17-31-52.png)
-
 
 Deploy custom applications with confidence by setting up Instance Scan definitions to monitor instance health throughout the deployment process. Instance scans interrogate your instance for configurations and health issues, allowing administrators an opportunity to address best practices and to avoid similar configuration issues in the future.
 
@@ -149,28 +163,8 @@ Click **Get Started** in the **Set up user access** section
 {: .warning}
 > Old content below here
 
-![](../images/2023-03-03-16-37-59.png)
 
-## Review and set up tooling in the development instance
 
-Review and update App Engine Studio developer access to builder tools during development.
-
-## Review Flow Designer access settings from App Engine Studio in development
-
-Review and update App Engine Studio developer access settings to Flow Designer Resources and update as necessary.
-
-Developers can leverage Flow Designer capabilities while creating logic and automation for custom applications.
-
-Consider restricting developer access to Flow Designer Resources using content filtering for Flow Designer. This allows administrators to manage access to Flow Designer resources and specify which features App Engine Studio users can leverage while building applications.
-
-![](../images/2023-03-03-16-41-01.png)
-
-*This step is not required as part of the initial application setup.*
-
-Flow Designer access from App Engine Studio can be updated later to provide developers the editing capabilities that best suit their experience and needs.
-
-{: .highlight}
-*For more information on Flow Designer resources, see [[Product Documentation: Content Filtering for Flow Designer]](https://docs.servicenow.com/csh?topicname=content-filtering-flow-designer.html)*
 
 ## Review Service Catalog access settings in development
 

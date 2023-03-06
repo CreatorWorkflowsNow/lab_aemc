@@ -21,6 +21,13 @@ nav_order: 120
 
 ## App Engine Studio Guided Setup
 
+Log in to your **Dev** instance. 
+
+{: .warning}
+Be sure your application scope to **App Engine Studio**. If it is not set, use the application picker to change the current session's scope.
+
+![](../images/2023-03-03-16-39-04.png)
+
 Navigate to **All**, then type **App Engine**, then look for **Configuration** -> "**Guided Setup**.  
 
 Click on **Guided Setup**. 
@@ -37,7 +44,7 @@ Click on **Get Started** in the **Review and setup tooling** section
 
 Click on **Skip** in the **Connect Spokes** Section
 
-*We are skipping this for this lab.  In that section, you would configure credentials to different services to that they can be leveraged by App Engine Users building applications.*
+*We are skipping **Connect** **Spokes** for this lab.  In that section, you would configure credentials to different services to that they can be leveraged by App Engine Users building applications.*
 
 ![](../images/2023-03-06-17-05-43.png)
 
@@ -45,7 +52,9 @@ Click **Configure** in the **Review Flow Designer access settings** section.
 
 ![](../images/2023-03-06-17-08-18.png)
 
-Review and update App Engine Studio developer access settings to Flow Designer Resources and update as necessary.
+## Things to consider
+
+Here you would want to review and update App Engine Studio developer access settings to Flow Designer Resources and update as necessary.
 
 Developers can leverage Flow Designer capabilities while creating logic and automation for custom applications.
 
@@ -56,6 +65,7 @@ Consider restricting developer access to Flow Designer Resources using content f
 {: .note}
 > For the purposes if this lab, we are only reviewing where to manage the Flow Designer access settings
 
+{: .highlight}
 *For more information on managing User access to Flow Designer settings, see [[Product Documentation: User access to Flow Designer]](https://docs.servicenow.com/csh?topicname=user-access-flow-designer.html&version=latest)*
 
 When you are done reviewing the Flow Designer access settings, close out the modal, then click "Mark as Complete".
@@ -64,17 +74,33 @@ When you are done reviewing the Flow Designer access settings, close out the mod
 
 ![](../images/2023-03-06-17-15-26.png)
 
+You should notice that the % Complete has increased on the page. 
+
+![](../images/2023-03-06-17-17-15.png)
+
+Click **Configure** on **Review Service Catalog access settings**
+
+![](../images/2023-03-06-17-18-08.png)
+
+You should review App Engine Studio developer access to the Catalog Builder tool’s catalog item templates and catalogs / categories, and update access as necessary.
+
+The goal of this lab is to ensure you are aware of this information and where to configure.  No configuration of the Service Catalog access setting is necessary for the lab. 
+
+By default, App Engine Studio developers can leverage catalog templates to quickly create record producers or catalog items. Developers can also publish catalog items to any catalog. If you wish to limit access to templates or restrict publishing access to catalogs or categories, update the access accordingly in Catalog Builder.
+
+{: .highlight}
+*For more information on managing the Catalog Builder, see [[Product Documentation: Set up the catalog builder]](https://docs.servicenow.com/csh?topicname=set-up-cat-builder.html&version=latest)*
+
+Click **Mark as Complete** on the **Review Service Catalog access settings** section
+
+![](../images/2023-03-06-17-29-45.png)
+
 ---
 
 {: .warning}
 > Old content below here
 
 ![](../images/2023-03-03-16-37-59.png)
-
-{: .warning}
-Be sure your application scope to 'App Engine Studio'. If not, use the application picker to change the current session's scope
-
-![](../images/2023-03-03-16-39-04.png)
 
 ## Review and set up tooling in the development instance
 
@@ -94,6 +120,7 @@ Consider restricting developer access to Flow Designer Resources using content f
 
 Flow Designer access from App Engine Studio can be updated later to provide developers the editing capabilities that best suit their experience and needs.
 
+{: .highlight}
 *For more information on Flow Designer resources, see [[Product Documentation: Content Filtering for Flow Designer]](https://docs.servicenow.com/csh?topicname=content-filtering-flow-designer.html)*
 
 ## Review Service Catalog access settings in development
@@ -108,6 +135,7 @@ By default, App Engine Studio developers can leverage catalog templates to quick
 
 Catalog access from App Engine Studio can be updated at a later point to modify developer access to App Engine Studio catalogs, categories, and catalog templates.
 
+{: .highlight}
 *For more information on creating or editing catalog items, see
 [[Product Documentation: Catalog Builder]](https://docs.servicenow.com/csh?topicname=catalog-builder.html)*
 
@@ -125,6 +153,7 @@ Work with professional ServiceNow developers to configure Instance Scan definiti
 
 **Enable and configure Instance Scan properties in your production instance if you plan to clone!**
 
+{: .highlight}
 *For more information on managing instance health scans, see [[Product Documentation: Instance Scan]](https://docs.servicenow.com/csh?topicname=hs-landing-page.html)*
 
 ## Set up user access

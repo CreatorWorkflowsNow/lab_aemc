@@ -2,7 +2,7 @@
 layout: default
 title: Install Requirements
 parent: 0 | Prepare & Install
-nav_order: 30
+nav_order: 70
 ---
 
 # Install Requirements
@@ -96,5 +96,5 @@ Repeat this process on all instances for cloning purposes.
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
-[PREVIOUS]: ../20_Personas_and_roles
+[PREVIOUS]: ../60_Personas_and_roles
 [NEXT]: ../../lab_1_configure/

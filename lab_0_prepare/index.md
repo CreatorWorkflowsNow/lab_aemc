@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 0 | Prepare & Install
-nav_order: 5
+nav_order: 40
 has_children: true
 ---
 
@@ -11,4 +11,4 @@ has_children: true
 [Next][NEXT]{: .btn .btn-purple }
 
 [PREVIOUS]: ../../
-[NEXT]: ./10_AES_Overview/
+[NEXT]: ./50_AES_Overview/

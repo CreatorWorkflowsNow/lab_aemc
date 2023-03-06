@@ -2,7 +2,7 @@
 layout: default
 title: Personas & Roles
 parent: 0 | Prepare & Install
-nav_order: 20
+nav_order: 60
 ---
 
 # Personas and Roles
@@ -101,5 +101,5 @@ platform
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
-[PREVIOUS]: ../10_AES_Overview
-[NEXT]: ../30_Install_Requirements
+[PREVIOUS]: ../50_AES_Overview
+[NEXT]: ../70_Install_Requirements

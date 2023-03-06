@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 3 | Manage
-nav_order: 30
+nav_order: 300
 has_children: true
 ---
 

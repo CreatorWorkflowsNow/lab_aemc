@@ -19,22 +19,22 @@ nav_order: 120
 
 ---
 
-# App Engine Studio Guided Setup
+## App Engine Studio Guided Setup
 
 Navigate to **App Engine Studio \Configuration \Guided Setup** in your development instance to access the App Engine Studio Guided Setup.
 
 ![](../images/2023-03-03-16-37-59.png)
 
 {: .warning}
-Set your application scope is set to 'App Engine Studio'. If not, use the application picker to change the current session's scope
+Be sure your application scope to 'App Engine Studio'. If not, use the application picker to change the current session's scope
 
 ![](../images/2023-03-03-16-39-04.png)
 
-**Review and set up tooling in the development instance**
+## Review and set up tooling in the development instance
 
 Review and update App Engine Studio developer access to builder tools during development.
 
-**Review Flow Designer access settings from App Engine Studio in development**
+## Review Flow Designer access settings from App Engine Studio in development
 
 Review and update App Engine Studio developer access settings to Flow Designer Resources and update as necessary.
 
@@ -50,7 +50,7 @@ Flow Designer access from App Engine Studio can be updated later to provide deve
 
 *For more information on Flow Designer resources, see [[Product Documentation: Content Filtering for Flow Designer]](https://docs.servicenow.com/csh?topicname=content-filtering-flow-designer.html)*
 
-**Review Service Catalog access settings in development**
+## Review Service Catalog access settings in development
 
 Review App Engine Studio developer access to the Catalog Builder tool's catalog item templates and catalogs / categories, and update access as necessary.
 
@@ -65,7 +65,7 @@ Catalog access from App Engine Studio can be updated at a later point to modify 
 *For more information on creating or editing catalog items, see
 [[Product Documentation: Catalog Builder]](https://docs.servicenow.com/csh?topicname=catalog-builder.html)*
 
-**Configure Instance Scan definitions**
+## Configure Instance Scan definitions
 
 Deploy custom applications with confidence by setting up Instance Scan definitions to monitor instance health throughout the deployment process. Instance scans interrogate your instance for configurations and health issues, allowing administrators an opportunity to address best practices and to avoid similar configuration issues in the future.
 
@@ -81,11 +81,11 @@ Work with professional ServiceNow developers to configure Instance Scan definiti
 
 *For more information on managing instance health scans, see [[Product Documentation: Instance Scan]](https://docs.servicenow.com/csh?topicname=hs-landing-page.html)*
 
-**Set up user access**
+## Set up user access
 
 Configure the admin group and other general settings for App Engine Studio users.
 
-**Set up administrator group in development**
+## Set up administrator group in development
 
 Configure App Engine Studio administrator group membership in the [development] instance to manage development activities that occur in the development environment.
 

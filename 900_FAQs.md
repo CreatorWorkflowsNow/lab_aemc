@@ -1,7 +1,7 @@
 ---
 layout: default
 title: FAQs
-nav_order: 130
+nav_order: 900
 ---
 
 # FAQs

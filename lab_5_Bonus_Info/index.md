@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Lab 5 | Bonus
-nav_order: 50
+nav_order: 500
 has_children: true
 ---
 

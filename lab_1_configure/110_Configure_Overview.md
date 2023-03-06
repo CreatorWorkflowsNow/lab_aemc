@@ -28,7 +28,7 @@ The install steps in the diagram were completed for you as part of the Lab setup
 > 
 > Additionally, the AEMC plugin must be installed on all instances to appropriately collect application and developer data on development. For more information, see [[Product Documentation: System clone]](https://docs.servicenow.com/csh?topicname=c_SystemClone.html)
 
-The App Engine Studio bundle has three Guided Setup modules to assist in configuration:
+App Engine has three Guided Setup modules to assist in configuration:
 
 - **App Engine Studio Guided Setup**
 - **Pipeline and Deployment Guided Setup**

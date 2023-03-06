@@ -21,7 +21,53 @@ nav_order: 120
 
 ## App Engine Studio Guided Setup
 
-Navigate to **App Engine Studio \Configuration \Guided Setup** in your development instance to access the App Engine Studio Guided Setup.
+Navigate to **All**, then type **App Engine**, then look for **Configuration** -> "**Guided Setup**.  
+
+Click on **Guided Setup**. 
+
+![](../images/2023-03-06-16-55-44.png)
+
+Click on "**Get** **Started**"
+
+![](../images/2023-03-06-17-01-22.png)
+
+Click on **Get Started** in the **Review and setup tooling** section
+
+![](../images/2023-03-06-17-00-41.png)
+
+Click on **Skip** in the **Connect Spokes** Section
+
+*We are skipping this for this lab.  In that section, you would configure credentials to different services to that they can be leveraged by App Engine Users building applications.*
+
+![](../images/2023-03-06-17-05-43.png)
+
+Click **Configure** in the **Review Flow Designer access settings** section.
+
+![](../images/2023-03-06-17-08-18.png)
+
+Review and update App Engine Studio developer access settings to Flow Designer Resources and update as necessary.
+
+Developers can leverage Flow Designer capabilities while creating logic and automation for custom applications.
+
+Consider restricting developer access to Flow Designer Resources using content filtering for Flow Designer. This allows administrators to manage access to Flow Designer resources and specify which features App Engine Studio users can leverage while building applications.
+
+![](../images/2023-03-06-17-09-26.png)
+
+{: .note}
+> For the purposes if this lab, we are only reviewing where to manage the Flow Designer access settings
+
+*For more information on managing User access to Flow Designer settings, see [[Product Documentation: User access to Flow Designer]](https://docs.servicenow.com/csh?topicname=user-access-flow-designer.html&version=latest)*
+
+When you are done reviewing the Flow Designer access settings, close out the modal, then click "Mark as Complete".
+
+![](../images/2023-03-06-17-15-51.png)
+
+![](../images/2023-03-06-17-15-26.png)
+
+---
+
+{: .warning}
+> Old content below here
 
 ![](../images/2023-03-03-16-37-59.png)
 

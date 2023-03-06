@@ -63,7 +63,7 @@ Consider restricting developer access to Flow Designer Resources using content f
 ![](../images/2023-03-06-17-09-26.png)
 
 {: .note}
-> For the purposes if this lab, we are only reviewing where to manage the Flow Designer access settings
+> For the purposes of this lab, we are only reviewing where to manage the Flow Designer access settings
 
 {: .highlight}
 *For more information on managing User access to Flow Designer settings, see [[Product Documentation: User access to Flow Designer]](https://docs.servicenow.com/csh?topicname=user-access-flow-designer.html&version=latest)*
@@ -95,7 +95,56 @@ Click **Mark as Complete** on the **Review Service Catalog access settings** sec
 
 ![](../images/2023-03-06-17-29-45.png)
 
+
+## Configure Instance Scan definitions
+
+Click **Configure** in the section **Set up an instance scan cadence in Health Center**
+
+![](../images/2023-03-06-17-31-15.png)
+
+{: .note}
+> For the purposes of this lab, we are only reviewing where to manage the Instance Scan definitions 
+>
+> Work with your Platform Adminstrator on an overall Instance Scan strategy for Subproduction environments. 
+
+![](../images/2023-03-06-17-31-52.png)
+
+
+Deploy custom applications with confidence by setting up Instance Scan definitions to monitor instance health throughout the deployment process. Instance scans interrogate your instance for configurations and health issues, allowing administrators an opportunity to address best practices and to avoid similar configuration issues in the future.
+
+Instance Scan definitions are executed automatically when App Engine Studio applications are promoted to the **Testing** instance. Instance Scan results will be logged in the Notes section of the Deployment Request record.
+
+The App Engine Studio application does not ship with any out-of-box Instance Scan definitions (however a few Instance Scan definitions are installed with the Deployment Pipeline plugin to run basic performance checks).
+
+Work with professional ServiceNow developers to configure Instance Scan definitions and enforce best practices in your environments.
+
+![](../images/2023-03-03-16-42-38.png)
+
+**Enable and configure Instance Scan properties in your production instance if you plan to clone!**
+
+{: .highlight}
+*For more information on managing instance health scans, see [[Product Documentation: Instance Scan]](https://docs.servicenow.com/csh?topicname=hs-landing-page.html)*
+
+Click **Mark as Complete** on the **Set up an instance scan cadence in Health Center**
+
+![](../images/2023-03-06-17-35-47.png)
+
+Click the gray circle on the left hand side of the page below the green check mark.  
+
+It should say **Set up user access** when you hover over it. 
+
+![](../images/2023-03-06-17-36-57.png)
+
+Click **Get Started** in the **Set up user access** section
+
+![](../images/2023-03-06-17-38-21.png)
+
+
+
 ---
+
+---
+
 
 {: .warning}
 > Old content below here
@@ -139,22 +188,6 @@ Catalog access from App Engine Studio can be updated at a later point to modify 
 *For more information on creating or editing catalog items, see
 [[Product Documentation: Catalog Builder]](https://docs.servicenow.com/csh?topicname=catalog-builder.html)*
 
-## Configure Instance Scan definitions
-
-Deploy custom applications with confidence by setting up Instance Scan definitions to monitor instance health throughout the deployment process. Instance scans interrogate your instance for configurations and health issues, allowing administrators an opportunity to address best practices and to avoid similar configuration issues in the future.
-
-Instance Scan definitions are executed automatically when App Engine Studio applications are promoted to the **Testing** instance. Instance Scan results will be logged in the Notes section of the Deployment Request record.
-
-The App Engine Studio application does not ship with any out-of-box Instance Scan definitions (however a few Instance Scan definitions are installed with the Deployment Pipeline plugin to run basic performance checks).
-
-Work with professional ServiceNow developers to configure Instance Scan definitions and enforce best practices in your environments.
-
-![](../images/2023-03-03-16-42-38.png)
-
-**Enable and configure Instance Scan properties in your production instance if you plan to clone!**
-
-{: .highlight}
-*For more information on managing instance health scans, see [[Product Documentation: Instance Scan]](https://docs.servicenow.com/csh?topicname=hs-landing-page.html)*
 
 ## Set up user access
 

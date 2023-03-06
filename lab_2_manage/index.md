@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 2 | Configure
+title: 2 | Manage
 nav_order: 200
 has_children: true
 ---

@@ -5,10 +5,10 @@ nav_order: 40
 has_children: true
 ---
 
-# Lab 0 | Prepare & Install
+# Prepare & Install
 
-[Previous][PREVIOUS]{: .btn .mr-4 }
-[Next][NEXT]{: .btn .btn-purple }
+---
 
-[PREVIOUS]: ../../
-[NEXT]: ./50_AES_Overview/
+The sections below contain informational only.  
+
+No specific actions are required other than reading the material. 

@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Manage collaboration
-parent: 2 | Configure
-nav_order: 20
+parent: 2 | Manage
+nav_order: 220
 ---
 
 

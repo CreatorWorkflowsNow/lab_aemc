@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Manage AES Access
-parent: 2 | Configure
-nav_order: 10
+parent: 2 | Manage
+nav_order: 210
 ---
 
 # AEMC Overview

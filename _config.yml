@@ -62,7 +62,8 @@ exclude:
 #   https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#publishing-your-site-on-github-pages)
 
 # Set a path/url to a logo that will be displayed instead of the title
-logo: "images/logos/servicenow-logo.png"
+logo: "./images/logos/servicenow-logo-draft.png"
+#logo: "./images/logos/servicenow-logo.png"
 
 # Enable or disable the site search
 # Supports true (default) or false

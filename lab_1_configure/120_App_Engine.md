@@ -5,17 +5,28 @@ parent: 1 | Configure
 nav_order: 120
 ---
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+
 # App Engine Studio
 {: .no_toc }
 
 Review and set up tooling in the development instance
 {: .no_toc }
 
-## Table of contents
-{: .no_toc .text-delta }
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
 
 1. TOC
 {:toc}
+</details>
+
 
 ---
 
@@ -40,14 +51,15 @@ Click on "**Get** **Started**"
 
 ![](../images/2023-03-06-17-01-22.png)
 
-
+---
 # Review and set up tooling
 
 Click on **Get Started** in the **Review and setup tooling** section
 
 ![](../images/2023-03-06-17-00-41.png)
 
-## Connect Spokes
+---
+# Connect Spokes
 
 Click on **Skip** in the **Connect Spokes** Section
 
@@ -55,7 +67,8 @@ Click on **Skip** in the **Connect Spokes** Section
 
 *We are skipping **Connect** **Spokes** for this lab.  In that section, you would configure credentials to different services to that they can be leveraged by App Engine Users building applications.*
 
-## Flow Designer access settings
+---
+# Flow Designer access settings
 
 Click **Configure** in the **Review Flow Designer access settings** section.
 
@@ -92,7 +105,8 @@ You should notice that the % Complete has increased on the page.
 
 ![](../images/2023-03-06-17-17-15.png)
 
-## Review Service Catalog access settings
+---
+# Review Service Catalog access settings
 
 Click **Configure** on **Review Service Catalog access settings**
 
@@ -111,7 +125,8 @@ Click **Mark as Complete** on the **Review Service Catalog access settings** sec
 
 ![](../images/2023-03-06-17-29-45.png)
 
-## Set up an instance scan cadence in Health Center
+---
+# Set up an instance scan cadence in Health Center
 
 Click **Configure** in the section **Set up an instance scan cadence in Health Center**
 
@@ -143,6 +158,8 @@ Click **Mark as Complete** on the **Set up an instance scan cadence in Health Ce
 
 ![](../images/2023-03-06-17-35-47.png)
 
+# Set up user access
+
 Click the gray circle on the left hand side of the page below the green check mark.  
 
 It should say **Set up user access** when you hover over it. 
@@ -153,9 +170,14 @@ Click **Get Started** in the **Set up user access** section
 
 ![](../images/2023-03-06-17-38-21.png)
 
+Click **Configure** in the **Set up admin group** section
 
+![](../images/2023-03-07-12-13-00.png)
 
----
+Click **Edit...** on the **Group Members** tab
+
+![](../images/2023-03-07-12-16-02.png)
+
 
 ---
 
@@ -164,7 +186,7 @@ Click **Get Started** in the **Set up user access** section
 > Old content below here
 
 
-
+# Old content
 
 ## Review Service Catalog access settings in development
 

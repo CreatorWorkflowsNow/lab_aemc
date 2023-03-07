@@ -59,16 +59,17 @@ Click on **Get Started** in the **Review and setup tooling** section
 ![](../images/2023-03-06-17-00-41.png)
 
 ---
-# Connect Spokes
+## Connect Spokes
 
 Click on **Skip** in the **Connect Spokes** Section
 
 ![](../images/2023-03-06-17-05-43.png)
 
-*We are skipping **Connect** **Spokes** for this lab.  In that section, you would configure credentials to different services to that they can be leveraged by App Engine Users building applications.*
+{: .note}
+*We are skipping **Connect Spokes** for this lab. In that section, you would configure credentials to different services to that they can be leveraged by App Engine Users building applications.*
 
 ---
-# Flow Designer access settings
+## Flow Designer access settings
 
 Click **Configure** in the **Review Flow Designer access settings** section.
 
@@ -106,7 +107,7 @@ You should notice that the % Complete has increased on the page.
 ![](../images/2023-03-06-17-17-15.png)
 
 ---
-# Review Service Catalog access settings
+## Review Service Catalog access settings
 
 Click **Configure** on **Review Service Catalog access settings**
 
@@ -126,7 +127,7 @@ Click **Mark as Complete** on the **Review Service Catalog access settings** sec
 ![](../images/2023-03-06-17-29-45.png)
 
 ---
-# Set up an instance scan cadence in Health Center
+## Set up an instance scan cadence in Health Center
 
 Click **Configure** in the section **Set up an instance scan cadence in Health Center**
 
@@ -158,6 +159,8 @@ Click **Mark as Complete** on the **Set up an instance scan cadence in Health Ce
 
 ![](../images/2023-03-06-17-35-47.png)
 
+---
+
 # Set up user access
 
 Click the gray circle on the left hand side of the page below the green check mark.  
@@ -170,6 +173,15 @@ Click **Get Started** in the **Set up user access** section
 
 ![](../images/2023-03-06-17-38-21.png)
 
+## Set up admin group
+
+Configure App Engine Studio administrator group membership in the [development] instance to manage development activities that occur in the development environment.
+
+While development activities will be managed in the [development] instance, administrators manage application intake, collaboration, and deployment requests in [production].
+
+{: .note}
+*Group membership does not sync across instances, therefore App Engine Studio administrator group membership will also need to be provisioned in the [production] instance as part of the Pipelines and Deployment or Application Intake Guided Setup activities*
+
 Click **Configure** in the **Set up admin group** section
 
 ![](../images/2023-03-07-12-13-00.png)
@@ -178,61 +190,58 @@ Click **Edit...** on the **Group Members** tab
 
 ![](../images/2023-03-07-12-16-02.png)
 
+Move **Jayne Nigel** to the right hand side and click Save like in the image below.
 
----
+![](../images/2023-03-07_14-07-09.gif)
 
+{: .important}
+> Jayne will play the part of our App Engine Admin during the lab today.
 
-{: .warning}
-> Old content below here
+Click the "Group = App Engine Admins" filter on the **Group Members (1)** related list to refresh the list. 
 
+![](../images/2023-03-07-14-22-13.png)
 
-# Old content
+You should see **Jayne Nigel** appear in the **User** column. 
 
-## Review Service Catalog access settings in development
+After that click the "X" in the top right corner to close the modal. 
 
-Review App Engine Studio developer access to the Catalog Builder tool's catalog item templates and catalogs / categories, and update access as necessary.
+![](../images/2023-03-07-14-13-17.png)
 
-By default, App Engine Studio developers can leverage catalog templates to quickly create record producers or catalog items. Developers can also publish catalog items to any catalog. If you wish to limit access to templates or restrict publishing access to catalogs or categories, update the access accordingly in Catalog Builder.
+Next to **Set up admin group** click "Mark as Complete" then next to **Grant access to your current developers** click "Mark as Complete".
 
-![](../images/2023-03-03-16-42-14.png)
-
-*This step is not required as part of the initial application setup.*
-
-Catalog access from App Engine Studio can be updated at a later point to modify developer access to App Engine Studio catalogs, categories, and catalog templates.
+![](../images/2023-03-07-14-17-31.png)
 
 {: .highlight}
-*For more information on creating or editing catalog items, see
-[[Product Documentation: Catalog Builder]](https://docs.servicenow.com/csh?topicname=catalog-builder.html)*
+>We are skipping **Grant access to your current developers** as it has you create new users from scratch.  While this may work for some organizations, most of the time the user data is already synced from a Production environment. 
+>
 
+Click **Configure** next to **Grant access to other users**
 
-## Set up user access
+![](../images/2023-03-07-14-23-55.png)
 
-Configure the admin group and other general settings for App Engine Studio users.
+Click **Edit** on the **Group Members** related list. 
 
-## Set up administrator group in development
+![](../images/2023-03-07-14-25-01.png)
 
-Configure App Engine Studio administrator group membership in the [development] instance to manage development activities that occur in the development environment.
+Move **Abel Tuter** to the right hand side and click **Save**. 
 
-![](../images/2023-03-03-16-42-55.png)
+The purpose of this step is to add users to the group "App Engine Studio Users" which will grant them access to App Engine Studio via the role **sn_app_eng_studio.user**.
 
-While development activities will be managed in the [development] instance, administrators manage application intake, collaboration, and deployment requests in [production].
+{: .important}
+> In the next section, we will learn how to set up an Intake process for users that want to apply to be an **App Engine Studio User**. 
 
-Group membership does not sync across instances; therefore, system administrators are required to add users in both the development and production instances.
+Click the **X** in the top right of the modal to close it. 
 
-{: .note}
-Group membership does not sync across instances, therefore App Engine Studio administrator group membership will also need to be provisioned in the [production] instance as part of the Pipelines and Deployment or Application Intake Guided Setup activities*
+![](../images/2023-03-07-14-28-16.png)
 
-b.  **Grant access to current developers in development**
+Next to **Grant access to other users** click **Mark as Complete**.
 
-Allow existing application developers who are already assigned the **delegated_developer** role access to the App Engine Studio application by adding them to the 'App Engine Studio Users' assignment group.
+![](../images/2023-03-07-14-46-12.png)
 
-***Note:** If you wish to grant multiple developers access at one time, advance to the next step to manage access more efficiently*
+That completes the App Engine Studio Guided Setup portion of the lab. 
 
-c.  **Grant access to other users in development**
+In a real world scenario, you would also want to consider all or some of the above settings in your overall Platform cloning strategy.  
 
-After provisioning access for existing developers, grant App Engine Studio access to other users within the organization by adding them to the 'App Engine Studio Users' group.
-
-![](../images/2023-03-03-16-43-47.png)
 
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }

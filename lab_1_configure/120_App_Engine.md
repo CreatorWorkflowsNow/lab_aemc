@@ -246,5 +246,5 @@ In a real world scenario, you would also want to consider all or some of the abo
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
-[PREVIOUS]: ../110_Configure_Overview
+[PREVIOUS]: ../
 [NEXT]: ../130_Pipeline_and_Deployment

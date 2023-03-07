@@ -19,99 +19,79 @@ nav_order: 130
 
 ---
 
-## Pipeline and Deployment
+# Overview
+
+Once App Engine Studio Guided Setup has been completed, administrators must complete the Pipeline and Deployment Guided Setup activities.
 
 Pipelines enable you to automate the propagation and installation of your applications from one instance to another. Pipelines are powered by the ServiceNow CI / CD spoke, which enables you to automate processes such as publishing applications to the application repository, installing them on target instances, and running ATF tests and/or instance scans.
 
-To access the Pipeline and Deployment Guided Setup, navigate to **App Engine Studio \Pipelines and Deployment \Guided Setup**.
-
 Pipeline and Deployment Guided Setup activities do not sync across instances and Pipeline configuration activities are required on all instances (production and sub-production).
 
-Refer to the process flow on page **[9]** for an overview of the Pipeline and Deployment Guided Setup.
+{: .note-title}
+> (re)start here
+>
+> *The following steps will need to be completed for all instances in your lab environment*
+>
+> *This is the spot you will start over at for each environment*
+> 
+> *For the purpose of the lab, we recommend starting in Prod, then Test, then Dev*
 
-![](../images/2023-03-03-16-46-42.png)
+{: .highlight}
+If you do not have a Prod, then start with Test, then Dev. 
 
-{: .warning}
-Before beginning Pipelines and Deployment Studio Setup, ensure your application scope is set to '**Deployment Pipeline**'. If not, use the application picker to change the current session's scope.
+**To access the Pipeline and Deployment Guided Setup:**
+- Click **All** 
+- type **app engine**
+- click **Guided Setup** in the Pipelines and Deployments section
+
+![](../images/2023-03-07-15-05-18.png)
+
+Click the green **Get Started** button in the top-right.
+
+![](../images/2023-03-07-15-23-27.png)
+
+Click **Get Started** in the **Configuring your production instance** section
+
+![](../images/2023-03-07-15-22-52.png)
+
+{: .important}
+*Before beginning Pipelines and Deployment Studio Setup, ensure your application scope is set to '**Deployment Pipeline**'. If not, use the application picker to change the current session's scope.*
 
 ![](../images/2023-03-03-16-47-44.png)
 
-1.  **[Configure your production instance]**
+# **Configure your production instance**
 
-In the [production] instance, complete the following steps to configure environments and deployment pipelines to streamline your application deployment process**.**
+In the **production** instance, complete the following steps to configure environments and deployment pipelines to streamline your application deployment process*.
 
 {: .warning}
 Complete these tasks only if you are logged into your production instance.
 
-a.  **Install 'Deployment Pipeline' plugin in production instance**
+## **Install 'Deployment Pipeline' plugin in production instance**
 
 {: .important }
 > This has already been installed for you on the Lab instance. 
->
-> You can read or skip to **b**.
 
-To install the Deployment Pipeline plugin, (***com.snc.deployment-pipeline**)*, login to your production instance and navigate to **System Definition \Plugins.**
+For future reference, the name of the Deployment Pipeline plugin is ***com.snc.deployment-pipeline**. 
 
-Use the search criteria to find the application. Click **Install**.
-
-![](../images/2023-03-03-16-50-43.png)
-
-b.  **Configure credentials in production instance**
+## **Configure credentials in production instance**
 
 Credentials allow your production instance to communicate with sub-production instances.
 
-In production, navigate to Connections & Credentials \Connection & Credential Aliases.
+In production, navigate to **Connections & Credentials** >>  **Connection & Credential Aliases**.
 
+{: .important}
 Only users assigned the **admin** role can create and update Credential Alias records.
 
-![](../images/2023-03-03-16-51-29.png)
+![](../images/2023-03-07-15-28-59.png)
 
-**Credential Alias Fields**
+Click the purple **New** button in the top-right to create a new Credential Alias record. 
 
-| Name | Name of the Credential Alias. This alias associates to Credential data only and resolves the application integration for each environment.
+![](../images/2023-03-07-15-38-10.png)
 
-An alias can only contain alpha, number, or underscore characters. This should be an easily identifiable name, as it will be referenced when creating Environment records in later steps.
+Set the **Type** to **Credential**.
 
-```
-+----------------+-----------------------------------------------------+
-| Field          | Description                                         |
-+================+=====================================================+
-| Name           | Name of the Credential Alias. This alias associates |
-|                | to Credential data only and resolves the            |
-|                | application integration for each environment.       |
-|                |                                                     |
-|                | An alias can only contain alpha, number, or         |
-|                | underscore characters. This should be an easily     |
-|                | identifiable name, as it will be referenced when    |
-|                | creating Environment records in later steps         |
-|                | (Pipeline Credentials,                              |
-+----------------+-----------------------------------------------------+
-| Type           | Ensure the 'Type' value is set to Credential when   |
-|                | creating                                            |
-|                |                                                     |
-|                | Credential Alias records for App Engine Studio.     |
-+----------------+-----------------------------------------------------+
+![](../images/2023-03-07-15-37-39.png)
 
-+----------------+-----------------------------------------------------+
-|                | The default value is Connection and Credential and  |
-|                | will need to be updated.                            |
-+================+=====================================================+
-| Application    | The application scope against which the Credential  |
-|                | Alias is assigned.                                  |
-|                |                                                     |
-|                | Ensure the value in the 'Application' field shows   |
-|                | as App Engine Studio. If the 'Application' field is |
-|                | not populating as expected, use the application     |
-|                | picker to change the current session's scope.       |
-+----------------+-----------------------------------------------------+
-| ID             | The unique identifier for the Credential Alias      |
-|                | record.                                             |
-|                |                                                     |
-|                | This value auto-populates after record creation     |
-|                | based on the format scope_name.alias_name and is    |
-|                | read-only.                                          |
-+----------------+-----------------------------------------------------+
-```
 
 Based on the credential information, take the appropriate approach in configuring Credential Alias records:
 

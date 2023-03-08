@@ -5,11 +5,10 @@ parent: 1 | Configure
 nav_order: 130
 ---
 
-# Pipeline and Deployment
+# Configure - Pipeline and Deployment
 {: .no_toc }
 
-[Previous][PREVIOUS]{: .btn .mr-4 }
-[Next][NEXT]{: .btn .btn-purple }
+*hello world*
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -59,14 +58,14 @@ Click **Get Started** in the **Configuring your production instance** section
 
 ![](../images/2023-03-03-16-47-44.png)
 
-# **Configure your production instance**
+# Configure your production instance
 
 In the **production** instance, complete the following steps to configure environments and deployment pipelines to streamline your application deployment process*.
 
 {: .warning}
 Complete these tasks only if you are logged into your production instance.
 
-## **Install 'Deployment Pipeline' plugin in production instance**
+## Install 'Deployment Pipeline' plugin in production instance
 
 {: .important }
 > This has already been installed for you on the Lab instance. 
@@ -91,6 +90,11 @@ Click the purple **New** button in the top-right to create a new Credential Alia
 Set the **Type** to **Credential**.
 
 ![](../images/2023-03-07-15-37-39.png)
+
+Set the **Name** to '*Pipeline Credentials*'
+
+![](../images/2023-03-08-14-00-47.png)
+
 
 
 Based on the credential information, take the appropriate approach in configuring Credential Alias records:

@@ -5,34 +5,20 @@ parent: 1 | Configure
 nav_order: 120
 ---
 
-<details open markdown="block">
-  <summary>
-    Table of contents
-  </summary>
-  {: .text-delta }
-
-# App Engine Studio
+# Configure - App Engine Studio
 {: .no_toc }
-
-Review and set up tooling in the development instance
-{: .no_toc }
-
-<details open markdown="block">
-  <summary>
-    Table of contents
-  </summary>
-  {: .text-delta }
-
-1. TOC
-{:toc}
-</details>
-
-
----
 
 *In this lab, we will review and update App Engine Studio developer access to builder tools during development.*
 
-## Log in to Dev
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+# Log in to Dev
 
 Log in to your **Dev** instance. 
 

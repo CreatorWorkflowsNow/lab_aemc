@@ -5,13 +5,7 @@ parent: 1 | Configure
 nav_order: 140
 ---
 
-# App Intake
-{: .no_toc }
-
-[Previous][PREVIOUS]{: .btn .mr-4 }
-[Next][NEXT]{: .btn .btn-purple }
-
-**Duration: 30 minutes**
+# Configure - App Intake
 {: .no_toc }
 
 ## Table of contents

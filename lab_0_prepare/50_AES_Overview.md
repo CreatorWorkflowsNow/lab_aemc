@@ -7,9 +7,6 @@ nav_order: 50
 
 # App Engine Studio Overview
 
-[Previous][PREVIOUS]{: .btn .mr-4 }
-[Next][NEXT]{: .btn .btn-purple }
-
 {: .highlight}
 > This part of the lab is for information purposes only. 
 >

@@ -7,6 +7,8 @@ nav_order: 0
 {: .warning }
 > THIS GUIDE IS STILL A DRAFT
 
+<button class="btn js-toggle-dark-mode">Dark mode</button>
+
 # App Engine Management Center
 {: .fs-9 }
 
@@ -27,6 +29,8 @@ We will cover concepts such as Pipelines and Deployments, Onboarding Developers,
 [Lab 5][Lab5]{: .btn .btn-purple } | Application Templates
 
 
+
+
 [Lab0]: /lab_0_prepare/
 [Lab1]: /lab_1_configure
 [Lab2]: /lab_2_manage
@@ -42,4 +46,18 @@ We will cover concepts such as Pipelines and Deployments, Onboarding Developers,
   gtag('js', new Date());
 
   gtag('config', 'G-XJ4NRHHVXR');
+</script>
+
+<script>
+const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+
+jtd.addEvent(toggleDarkMode, 'click', function(){
+  if (jtd.getTheme() === 'dark') {
+    jtd.setTheme('light');
+    toggleDarkMode.textContent = 'Dark mode';
+  } else {
+    jtd.setTheme('dark');
+    toggleDarkMode.textContent = 'Light mode';
+  }
+});
 </script>

@@ -8,8 +8,6 @@ nav_order: 130
 # Configure - Pipeline and Deployment
 {: .no_toc }
 
-*hello world*
-
 ## Table of contents
 {: .no_toc .text-delta }
 

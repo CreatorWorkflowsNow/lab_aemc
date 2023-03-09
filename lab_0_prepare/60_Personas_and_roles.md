@@ -8,9 +8,6 @@ nav_order: 60
 # Personas and Roles
 {: .no_toc }
 
-[Previous][PREVIOUS]{: .btn .mr-4 }
-[Next][NEXT]{: .btn .btn-purple }
-
 ## Table of contents
 {: .no_toc .text-delta }
 

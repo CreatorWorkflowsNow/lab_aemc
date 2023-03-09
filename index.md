@@ -31,9 +31,9 @@ We will cover concepts such as Pipelines and Deployments, Onboarding Developers,
 
 
 
-[Lab0]: /lab_0_prepare/
-[Lab1]: /lab_1_configure
-[Lab2]: /lab_2_manage
-[Lab3]: /lab_3_manage
-[Lab4]: /lab_4_Manage_App_Deployment/
-[Lab5]: /lab_5_Bonus_Info/
+[Lab0]: ./lab_0_prepare/
+[Lab1]: ./lab_1_configure
+[Lab2]: ./lab_2_manage
+[Lab3]: ./lab_3_manage
+[Lab4]: ./lab_4_Manage_App_Deployment/
+[Lab5]: ./lab_5_Bonus_Info/

@@ -7,6 +7,9 @@ nav_order: 60
 
 # Personas and Roles
 {: .no_toc }
+{: .d-inline-block }
+Ready for review
+{: .label .label-green }
 
 ## Table of contents
 {: .no_toc .text-delta }

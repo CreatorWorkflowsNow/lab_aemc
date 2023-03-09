@@ -7,6 +7,9 @@ nav_order: 140
 
 # Configure - App Intake
 {: .no_toc }
+{: .d-inline-block }
+WORK IN PROGRESS
+{: .label .label-yellow }
 
 ## Table of contents
 {: .no_toc .text-delta }

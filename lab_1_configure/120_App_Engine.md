@@ -7,6 +7,9 @@ nav_order: 120
 
 # Configure - App Engine Studio
 {: .no_toc }
+{: .d-inline-block }
+Ready for review
+{: .label .label-green }
 
 *In this lab, we will review and update App Engine Studio developer access to builder tools during development.*
 

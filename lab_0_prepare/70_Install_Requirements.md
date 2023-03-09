@@ -7,6 +7,9 @@ nav_order: 70
 
 # Install Requirements
 {: .no_toc }
+{: .d-inline-block }
+Ready for review
+{: .label .label-green }
 
 ## Table of contents
 {: .no_toc .text-delta }

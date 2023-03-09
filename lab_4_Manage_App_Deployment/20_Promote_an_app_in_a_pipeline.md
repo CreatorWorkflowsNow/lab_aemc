@@ -7,6 +7,9 @@ nav_order: 20
 
 # Promote an app in a pipeline
 {: .no_toc }
+{: .d-inline-block }
+WORK IN PROGRESS
+{: .label .label-yellow }
 
 **Duration: TBD minutes**
 {: .no_toc }

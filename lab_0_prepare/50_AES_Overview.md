@@ -6,6 +6,10 @@ nav_order: 50
 ---
 
 # App Engine Studio Overview
+{: .no_toc }
+{: .d-inline-block }
+Ready for review
+{: .label .label-green }
 
 {: .highlight}
 > This part of the lab is for information purposes only. 

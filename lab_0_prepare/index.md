@@ -5,7 +5,7 @@ nav_order: 40
 has_children: true
 ---
 
-# Prepare & Install
+# Lab 0 - Prepare & Install
 
 ---
 

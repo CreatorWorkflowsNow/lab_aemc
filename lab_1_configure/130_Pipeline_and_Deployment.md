@@ -7,6 +7,9 @@ nav_order: 130
 
 # Configure - Pipeline and Deployment
 {: .no_toc }
+{: .d-inline-block }
+WORK IN PROGRESS
+{: .label .label-yellow }
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -36,210 +39,196 @@ Pipeline and Deployment Guided Setup activities do not sync across instances and
 {: .highlight}
 If you do not have a Prod, then start with Test, then Dev. 
 
-**To access the Pipeline and Deployment Guided Setup:**
-- Click **All** 
-- type **app engine**
-- click **Guided Setup** in the Pipelines and Deployments section
-
-![](../images/2023-03-07-15-05-18.png)
-
-Click the green **Get Started** button in the top-right.
-
-![](../images/2023-03-07-15-23-27.png)
-
-Click **Get Started** in the **Configuring your production instance** section
-
-![](../images/2023-03-07-15-22-52.png)
-
 {: .important}
-*Before beginning Pipelines and Deployment Studio Setup, ensure your application scope is set to '**Deployment Pipeline**'. If not, use the application picker to change the current session's scope.*
+*Before beginning Pipelines and Deployment Setup, ensure your application scope is set to '**Deployment Pipeline**'. If not, use the application picker to change the current session's scope.*
 
-![](../images/2023-03-03-16-47-44.png)
+| ![](../images/2023-03-03-16-47-44.png)
 
-# Configure your production instance
+# Configure production 
 
 In the **production** instance, complete the following steps to configure environments and deployment pipelines to streamline your application deployment process*.
 
 {: .warning}
 Complete these tasks only if you are logged into your production instance.
 
-## Install 'Deployment Pipeline' plugin in production instance
+## Install 'Deployment Pipeline' plugin in production 
 
 {: .important }
 > This has already been installed for you on the Lab instance. 
 
-For future reference, the name of the Deployment Pipeline plugin is ***com.snc.deployment-pipeline**. 
+For future reference, the name of the Deployment Pipeline plugin is **com.snc.deployment-pipeline**. 
 
-## **Configure credentials in production instance**
+## Configure credentials in production 
 
 Credentials allow your production instance to communicate with sub-production instances.
-
-In production, navigate to **Connections & Credentials** >>  **Connection & Credential Aliases**.
 
 {: .important}
 Only users assigned the **admin** role can create and update Credential Alias records.
 
-![](../images/2023-03-07-15-28-59.png)
+- Navigate to **All** 
+- Type **Connections & Credentials** 
+- Click on **Connection & Credential Aliases**
 
-Click the purple **New** button in the top-right to create a new Credential Alias record. 
+| ![](../images/2023-03-07-15-28-59.png)
 
-![](../images/2023-03-07-15-38-10.png)
+- Click the purple **New** button in the top-right to create a new Credential Alias record. 
 
-Set the **Type** to **Credential**.
+| ![](../images/2023-03-07-15-38-10.png)
 
-![](../images/2023-03-07-15-37-39.png)
+- Set the **Type** to **Credential**.
 
-Set the **Name** to '*Pipeline Credentials*'
+| ![](../images/2023-03-07-15-37-39.png) |
 
-![](../images/2023-03-08-14-14-44.png)
+- Set the **Name** to `Pipeline Credentials` and click **Submit**
+
+| ![](../images/2023-03-08-14-14-44.png) | ![](../images/2023-03-09-15-26-09.png) |
 
 
----
-{: .important}
-Old data below here
+{: .note}
+> ***Based on the credential information, take the appropriate approach in configuring Credential Alias records:***
+> 
+> *If all environments in the Deployment Pipeline will use the **same** credential information (same username/password), then only **one** Credential Alias record will be configured in production*
+> 
+> - i.e., single Credential Alias record named '*Pipeline Credentials'*
+>
+> *However, if each environment in the Deployment Pipeline will use different credentials (different usernames / passwords), then Credential Alias records will be created for each instance in the production instance*
+> 
+> - i.e., multiple Credential Alias records named 'Dev Credentials', 'Test Credentials', 'Stage Credentials', and 'Prod Credentials'
 
-Based on the credential information, take the appropriate approach in configuring Credential Alias records:
+{: .highlight}
+For this lab, we will create a single credential for all environments. 
 
--   If all environments in the Deployment Pipeline will use the [same] credential information (same username/password), then only [one] Credential Alias record will be configured in production
-    -   i.e., single Credential Alias record named '*Pipeline
-        Credentials'*
+- Click **Pipeline Credentials** to open the record.
 
--   However, if each environment in the Deployment Pipeline will use different credentials (different usernames / passwords), then Credential Alias records will be created for each instance in the production instance
+|![](../images/2023-03-09-13-48-09.png) |
 
-    -   i.e., multiple Credential Alias records named 'Dev Credentials', 'Test Credentials', 'Stage Credentials', and 'Prod Credentials'
+- Navigate to the **Credentials** Related List and click **New** to add a credential.
 
-Once the necessary Credential Alias record(s) have been created, navigate to the 'Credentials' Related List and click New to add credential
-details.
+|![](../images/2023-03-09-13-49-03.png)|
 
-Select Basic Auth Credentials to populate the Basic Auth Credential form (currently, this is the only Credential type supported by App Engine Studio).
+- Select **Basic Auth Credentials** 
 
-![](/images/image18.jpeg)
+|![](../images/2023-03-09-13-50-33.png)|
 
-It is recommended to use a username / password for a service account so that the password does not expire or change. The account [must exist in the] [target instance(s) and have admin permissions.]
+{: .highlight}
+*Currently, this is the only Credential type supported by App Engine Studio*
+
+{: .note}
+> It is recommended to use a username / password for a service account so that the password does not expire or change. 
+>
+> The account **must exist** in the target instance(s) and have admin permissions.
+
+- On the next page, fill out the form with these values and click **Submit**. 
+
+| Field | Value |
+|:---|:---|
+| Name | Pipeline Service Account |
+| Username | pipeline_user |
+| Password | LabTime4Me!
+
+|![](../images/2023-03-09-15-15-17.png)| ![](../images/2023-03-09-15-16-08.png) |
 
 *For more information, see [[Product Documentation: Create a Connection & Credential Alias]](https://docs.servicenow.com/csh?topicname=connection-alias.html)*
 
-c.  **Configure environments in production instance**
+## Configure environments in production instance
 
-Set up and configure the environments that will be included within your pipelines. These will be referenced when building your pipelines.
+{: .note}
+> *Set up and configure the environments that will be included within your pipelines. These will be referenced when building your pipelines.*
+> 
+> *Your production instance is where your pipeline configurations reside and will be your controller instance.*
+> 
+> *The 'Is Controller?' box will be **checked** on your production instance only. This box will be **unchecked** for all sub-production Environment records.*
 
-Your production instance is where your pipeline configurations reside and will be your controller instance.
+**Access the Pipeline and Deployment Guided Setup:**
+- Click **All** 
+- Type **pipelines**
+- Click **Guided Setup** in the Pipelines and Deployments section
 
-**The 'Is Controller?' box will be [checked] on your production instance only. This box will be [unchecked] for all sub-production Environment records.**
+| ![](../images/2023-03-07-15-05-18.png)
 
-![](/images/image19.jpeg)
+- Click the green **Get Started** button in the top-right.
 
-**Environments**
+| ![](../images/2023-03-07-15-23-27.png)
 
-```
-+----------------+-----------------------------------------------------+
-| **Field**      | **Description**                                     |
-+================+=====================================================+
-| Name           | Name of the environment.                            |
-+----------------+-----------------------------------------------------+
-| Instance Type  | Purpose the instance serves in the Deployment       |
-|                | Pipeline (i.e., sandbox, development, testing,      |
-|                | staging, production).                               |
-+----------------+-----------------------------------------------------+
-| Instance URL   | URL for the instance. Must begin with **http://**   |
-|                | or **https://**                                     |
-+----------------+-----------------------------------------------------+
-| Instance ID    | Auto-generated ID value based on Instance URL       |
-+----------------+-----------------------------------------------------+
-| Application    | Application scope against which the Environment is  |
-|                | assigned.                                           |
-|                |                                                     |
-|                | Ensure the value in the 'Application' field shows   |
-|                | as **App Engine Studio**. If the 'Application'      |
-|                | field is not populating as expected, use the        |
-|                | application picker to change the current session's  |
-|                | scope.                                              |
-+----------------+-----------------------------------------------------+
-| Instance       | ID of the Credential Alias record (displays as      |
-| credential     | **scope_name.alias_name**). This should point to    |
-|                | the Credential Alias record for the environment     |
-|                | being set up.                                       |
-|                |                                                     |
-|                | For example, creating an Environment record for a   |
-|                | development instance:                               |
-+----------------+-----------------------------------------------------+
+- Click **Get Started** in the **Configuring your production instance** section
 
-+----------------+-----------------------------------------------------+
-|                | -   **Name**: My Company's Dev Instance             |
-|                |                                                     |
-|                | -   **Instance Type: '**Development'                |
-|                |                                                     |
-|                | -   **Instance URL:**                               |
-|                |     [[https://mycompanydev.service-now.com]{        |
-|                | .underline}](https://mycompanydev.service-now.com/) |
-|                |                                                     |
-|                | -   **Instance Credential:** Dev AES Pipeline       |
-|                |     Credential                                      |
-|                |                                                     |
-|                | -   **Is Controller**?: Unchecked                   |
-+================+=====================================================+
-| Is Controller? | Indicates the Controller instance of a pipeline.    |
-|                |                                                     |
-|                | The Controller is the instance where pipeline       |
-|                | configurations are captured, sub-flows run, and     |
-|                | where all App Engine Studio requests are created.   |
-|                |                                                     |
-|                | This field should only be checked for an instance   |
-|                | of type                                             |
-|                |                                                     |
-|                | **Production**!                                     |
-+----------------+-----------------------------------------------------+
-```
+| ![](../images/2023-03-07-15-22-52.png)
+
+- Click **Configure** in the **Configure Environments** section 
+
+| ![](../images/2023-03-09-15-28-57.png) |
+
+- Click **New** in the top right
+
+| ![](../images/2023-03-09-15-29-57.png)|
+
+- Complete the from as below.  You **will not** be able to Submit until we get the Instance Id in the following steps. 
+
+| ![](../images/2023-03-09-15-32-08.png) |
+
+| Field | Value |
+|:---|:---|
+| Name | ```Dev``` |
+| Instance Type| ```Development``` |
+| Instance URL | ```The full URL of your Dev Lab instance (Ex. https://your-lab-123.service-now.com)``` |
+| Instance credential | ```sn_deploy_pipeline.Pipeline_Credentials``` |
+| Is Controller? | ```Leave unchecked``` |
+| Instance Id | ```*See instructions below*``` |
+
+{: .important}
+*For the field "**Instance Id**", we will need to log in to the Dev Lab instance and manually retrieve this value.*
+
+On your Dev instance
+ - Click **All** 
+ - Type ```stats.do```
+ - Hit Enter
+
+- Select and copy the value for *Instance ID*
+
+| ![](../images/2023-03-09-15-39-10.png) |
+
+- Switch *back* to your Production instance
+
+- Paste the *Instance ID* value into the *Instance ID* field and click **Validate**.
+
+| ![](../images/2023-03-09-15-49-48.png)|
+|![](../images/2023-03-09-15-50-27.png)|
+
+- You should see a blue message that says "*The environment was validated successfully*".
+
+|![](../images/2023-03-09-15-51-38.png)|
+
+{: .warning}
+> *If you see a red error message*
+> ![](../images/2023-03-09-15-53-40.png)
+>
+> *Then you will need to do the following:*
+> - Log in to Dev
+> - Set the password for ```pipeline_user```
+> - Log in to Prod
+> - Update the Credential records for ```pipeline_user``
+> - Attempt Validation again
 
 *For more information, see [[Product Documentation: Define environments]](https://docs.servicenow.com/csh?topicname=create-environment.html)*
 
-a.  **Configure pipelines in production instance**
+## Configure pipelines in production
 
-A pipeline defines the path an application takes from the development to production environments and allows administrators to quickly move applications across instances.
+*A pipeline defines the path an application takes from the development to production environments and allows administrators to quickly move applications across instances.*
 
-Set up and configure your pipelines by specifying the environments to include along with their position in the pipeline.
-
-![](/images/image20.png)
+*Set up and configure your pipeline by specifying the environments to include along with their position in the pipeline.*
 
 
-**Pipelines**
 
-```
-  -----------------------------------------------------------------------
-  **Field**         **Description**
-  ----------------- -----------------------------------------------------
-  Name              Name of the pipeline.
+---
+{: .warning}
+> Old data below here
 
-  Pipeline Type     Purpose of the development pipeline.
 
-  Source            The environment where development activities take
-  Environment       place in the deployment pipeline.
-  -----------------------------------------------------------------------
-```
 
-```
-+----------------+-----------------------------------------------------+
-|                | Each pipeline must have a unique Source             |
-|                | environment.                                        |
-+================+=====================================================+
-| Application    | Application scope against which the Pipeline record |
-|                | is assigned.                                        |
-|                |                                                     |
-|                | Ensure the value in the 'Application' field shows   |
-|                | as **App Engine Studio**. If the 'Application'      |
-|                | field is not populating as expected, use the        |
-|                | application picker to change the current session's  |
-|                | scope.                                              |
-+----------------+-----------------------------------------------------+
-| Active         | Option to activate the pipeline.                    |
-|                |                                                     |
-|                | The 'Submit' button will not be available for App   |
-|                | Engine Studio developers unless there is an active  |
-|                | pipeline where the source environment is the        |
-|                | instance where the App Engine Studio application is |
-|                | installed.                                          |
-+----------------+-----------------------------------------------------+
-```
+| ![](/images/image20.png)
+
+
+## Pipelines
 
 Once a pipeline has been created, use the **Pipeline Environments Order** Related List on the Pipeline record to configure the instance order for the pipeline. Create a record in the related list for all instances *[except]* the development instance and specify the environment's order within the pipeline.
 
@@ -247,36 +236,11 @@ Application movement across pipelines is dictated by the order of the environmen
 
 Be sure the environment order is consistent with the defined instance strategy. The production instance should have the highest 'Order' value *(i.e., Testing: 100, Staging: 200, Production: 300).*
 
-![](/images/image21.jpeg)
+| ![](/images/image21.jpeg)
 
 ***Note:** Since the development environment is already identified as the 'Source Environment' on the Pipeline record, a Pipeline Environment Order related record is not required*
 
 **Pipeline Environment Orders**
-```
-+----------------+-----------------------------------------------------+
-| **Field**      | **Description**                                     |
-+================+=====================================================+
-| Pipeline       | Refers to the pipeline type.                        |
-+----------------+-----------------------------------------------------+
-| Environment    | The environment being added as part of the          |
-|                | deployment pipeline.                                |
-+----------------+-----------------------------------------------------+
-| Order          | Order in which the environment exists in the        |
-|                | pipeline.                                           |
-|                |                                                     |
-|                | Applications move through the pipeline in is        |
-|                | ascending order.                                    |
-+----------------+-----------------------------------------------------+
-| Application    | Application scope against which the Pipeline        |
-|                | Environment Order record is assigned.               |
-|                |                                                     |
-|                | Ensure the value in the 'Application' field shows   |
-|                | as **App Engine Studio**. If the 'Application'      |
-|                | field is not populating as expected, use the        |
-|                | application picker to change the current session's  |
-|                | scope.                                              |
-+----------------+-----------------------------------------------------+
-```
 
 *For more information, see [[Product Documentation: Create a pipeline]](https://docs.servicenow.com/csh?topicname=create-pipeline.html)*
 
@@ -308,7 +272,7 @@ Use the search criteria to find the application. Click **Install**.
 
 Repeat and install the Deployment Pipeline plugin in each sub-production instance.
 
-![](/images/image22.png)
+| ![](/images/image22.png)
 
 ***Note:** If you have already installed the App Engine Studio bundle in the development instance and promoted up to production, skip this step*
 
@@ -322,7 +286,7 @@ Navigate to Connections & Credentials \Connection & Credential Aliases.
 
 Based on the credential information, take the appropriate approach in configuring Credential Alias records:
 
-![](/images/image17.png)
+| ![](/images/image17.png)
 
 
 -   If all environments in the Deployment Pipeline will use the [same] credential information (same username / password), then create a single Credential Alias record with the same details as the Credential Alias created in the production instance
@@ -379,7 +343,7 @@ Enable the system properties that will allow the ATF suite to run in the testing
 
 App Engine Studio ships with an out-of-box test suite as a placeholder, however you are responsible for configuration of the ATF tests. If the out-of- box suite is not modified, they will still run but will not impact the flow.
 
-![](/images/image23.jpeg)
+| ![](/images/image23.jpeg)
 
 -   **Enable test / test suite execution *(sn_atf.runner.enabled)***
     -   Check this box on the ***[testing]*** instance to enable automated tests to run as part of the application deployment process

@@ -6,7 +6,10 @@ has_children: true
 has_toc: false
 ---
 
-# Configure
+# Lab 1 - Configure
+{: .d-inline-block }
+IN PROGRESS
+{: .label .label-yellow }
 
 Lab 1 Configure contains three sections.  
 

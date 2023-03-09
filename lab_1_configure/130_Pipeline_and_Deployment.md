@@ -93,9 +93,12 @@ Set the **Type** to **Credential**.
 
 Set the **Name** to '*Pipeline Credentials*'
 
-![](../images/2023-03-08-14-00-47.png)
+![](../images/2023-03-08-14-14-44.png)
 
 
+---
+{: .important}
+Old data below here
 
 Based on the credential information, take the appropriate approach in configuring Credential Alias records:
 

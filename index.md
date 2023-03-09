@@ -33,3 +33,13 @@ We will cover concepts such as Pipelines and Deployments, Onboarding Developers,
 [Lab3]: /lab_3_manage
 [Lab4]: /lab_4_Manage_App_Deployment/
 [Lab5]: /lab_5_Bonus_Info/
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XJ4NRHHVXR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XJ4NRHHVXR');
+</script>

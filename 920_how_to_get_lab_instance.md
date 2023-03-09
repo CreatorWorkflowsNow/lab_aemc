@@ -1,6 +1,7 @@
 ---
 layout: default
 title: How to get Lab Instance
+parent: References
 nav_order: 20
 ---
 

@@ -3,6 +3,7 @@ layout: default
 title: Manage AES Access
 parent: 2 | Manage
 nav_order: 210
+nav_exclude: true
 ---
 
 # AEMC Overview

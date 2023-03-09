@@ -3,6 +3,7 @@ layout: default
 title: Manage collaboration
 parent: 2 | Manage
 nav_order: 220
+nav_exclude: true
 ---
 
 # Collaboration and Delegated Development

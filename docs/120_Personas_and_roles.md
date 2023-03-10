@@ -23,6 +23,7 @@ Published 3/10/23
 
 ---
 # System Administrator
+
 ## Responsibilities
 {: .no_toc}
 
@@ -96,6 +97,8 @@ platform
 ## Role required:
 {: .no_toc}
 - sn_app_eng_studio.user
+
+---
 
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }

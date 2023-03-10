@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Configure AES in Dev 
-nav_order: 160
+nav_order: 140
 ---
 
 # Configure App Engine Studio in Dev
@@ -148,7 +148,7 @@ You should see **Jayne Nigel** appear in the **User** column after a few seconds
 
 | 28) Move **Abel Tuter** to the right hand side and click **Save**.  | 
 
-*The purpose of this step is to add users to the group "App Engine Studio Users" which will grant them access to App Engine Studio via the role **sn_app_eng_studio.user**.*
+*The purpose of this step is to add adding Abel to the group "App Engine Studio Users" is that his membership in the group will grant him access to App Engine Studio via the role **sn_app_eng_studio.user**.*
 
 <!--
 {: .important}
@@ -164,5 +164,5 @@ Congratulations!  App Engine Studio is ready to go in your Dev environment!
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
-[PREVIOUS]: ../
-[NEXT]: ../130_Pipeline_and_Deployment
+[PREVIOUS]: ../130_Install_Requirements
+[NEXT]: ../150_Pipeline_and_Deployment

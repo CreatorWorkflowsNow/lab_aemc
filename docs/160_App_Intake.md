@@ -1,7 +1,7 @@
 ---
 layout: default
 title: App Intake
-nav_order: 180
+nav_order: 160
 ---
 
 # Configure - App Intake
@@ -25,7 +25,6 @@ WORK IN PROGRESS
 ## another thing
 
 [Previous][PREVIOUS]{: .btn .mr-4 }
-[Next][NEXT]{: .btn .btn-purple }
 
-[PREVIOUS]: ../130_Pipeline_and_Deployment
+[PREVIOUS]: ../150_Pipeline_and_Deployment
 [NEXT]: ../../lab_2_manage

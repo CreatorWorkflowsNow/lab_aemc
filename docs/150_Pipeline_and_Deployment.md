@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Pipeline and Deployment
-nav_order: 170
+nav_order: 150
 ---
 
 # Configure - Pipeline and Deployment
@@ -367,5 +367,5 @@ Ensure that the controller instance was configured on all sub-production instanc
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
-[PREVIOUS]: ../120_App_Engine
-[NEXT]: ../140_App_Intake
+[PREVIOUS]: ../140_Configure_AES_in_Dev
+[NEXT]: ../160_App_Intake

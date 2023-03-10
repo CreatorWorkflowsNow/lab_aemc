@@ -6,14 +6,15 @@ nav_order: 150
 
 # Configure Credentials
 {: .d-inline-block }
-WORK IN PROGRESS
-{: .label .label-yellow }
+Published 3/10/23
+{: .label .label-green }
 
 *Credentials allow App Engine Studio and App Engine Management Center to communicate.*
 
 {: .important}
 > Complete the steps below in all of your Lab environments.  
 >
+> Start with Prod, then Test, then Dev.
 
 | 1) Navigate to **All** 
 | 2) Type **Connections & Credentials** 
@@ -79,5 +80,8 @@ Only users assigned the **admin** role can create and update Credential Alias re
 {: .note}
 *For more information, see [[Product Documentation: Create a Connection & Credential Alias]](https://docs.servicenow.com/csh?topicname=connection-alias.html)*
 
-[PREVIOUS]: ../140_Configure_AES_in_Dev
-[NEXT]: ../160_App_Intake
+[Previous][PREVIOUS]{: .btn .mr-4 }
+[Next][NEXT]{: .btn .btn-purple }
+
+[PREVIOUS]: ../140_Configure_AES
+[NEXT]: ../160_Environments

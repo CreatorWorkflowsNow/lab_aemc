@@ -1,15 +1,18 @@
 ---
 layout: default
-title: Configure AES in Dev 
+title: Configure AES
 nav_order: 140
 ---
 
-# Configure App Engine Studio in Dev
+# Configure App Engine Studio
 {: .d-inline-block }
 Published 3/10/23
 {: .label .label-green }
 
 *In this lab, we will review and update App Engine Studio developer access to builder tools during development.*
+
+{: .important}
+> App Engine Studio is configured in the **Dev** environment where development ent will occur. 
 
 ---
 
@@ -131,21 +134,16 @@ Published 3/10/23
 | 27) Click **Edit** on the **Group Members** related list. |  ![](../assets/images/2023-03-07-14-25-01.png) |
 | 28) Move **Abel Tuter** to the right hand side and click **Save**.  | 
 
+{: .highlight}
 *The purpose of this step is that by adding Abel to the group "App Engine Studio Users" his membership in the group he will be granted the role **sn_app_eng_studio.user** will which allow him to access App Engine Studio.*
 
-<!--
-{: .important}
-> In the next section, we will learn how to set up an Intake process for users that want to apply to be an **App Engine Studio User**. 
--->
-
 | 29) Click the **X** in the top right of the modal to close it. | ![](../assets/images/2023-03-07-14-28-16.png) 
-
 | 30) Next to **Grant access to other users** click **Mark as Complete**. | ![](../assets/images/2023-03-07-14-46-12.png)
 
-Congratulations!  App Engine Studio is ready to go in your Dev environment! 
+**Congratulations!  App Engine Studio is ready to go in your Dev environment!**
 
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
 [PREVIOUS]: ../130_Install_Requirements
-[NEXT]: ../150_Credentials_Setup
+[NEXT]: ../150_Credentials

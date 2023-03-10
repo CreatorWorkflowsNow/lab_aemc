@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Install Requirements
-parent: 0 | Prepare & Install
-nav_order: 70
+nav_order: 130
 ---
 
 # Install Requirements
@@ -18,9 +17,13 @@ Ready for review
 {:toc}
 
 {: .highlight}
-> This part of the lab is for information purposes only. 
+> Install requirements for App Engine are provided for information purposes only. 
 >
-> No activity required.
+> The install steps were completed for you as part of the Lab setup. 
+>
+> We **highly** encourage reviewing the information below before attempting a live install. 
+>
+> [I'm brave... Skip to next lab][NEXT]{: .btn .btn-purple }
 
 ---
 
@@ -96,5 +99,5 @@ Repeat this process on all instances for cloning purposes.
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
-[PREVIOUS]: ../60_Personas_and_roles
-[NEXT]: ../../lab_1_configure/
+[PREVIOUS]: ../120_Personas_and_roles
+[NEXT]: ../160_Configure_AES_in_Dev

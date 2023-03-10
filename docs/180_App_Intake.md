@@ -1,8 +1,7 @@
 ---
 layout: default
 title: App Intake
-parent: 1 | Configure
-nav_order: 140
+nav_order: 180
 ---
 
 # Configure - App Intake

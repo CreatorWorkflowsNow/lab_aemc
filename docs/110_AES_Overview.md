@@ -1,8 +1,7 @@
 ---
 layout: default
 title: AES Overview
-parent: 0 | Prepare & Install
-nav_order: 50
+nav_order: 110
 ---
 
 # App Engine Studio Overview
@@ -26,7 +25,7 @@ With guidance-driven development flows and pre-configured application templates,
 
 Administrators control which applications to deploy by reviewing and testing applications created by App Engine Studio developers – and by delegating development to business units in your organization, administrators are freed up to address more strategic, system-wide issues.
 
-![relative](../images/lab1_1_image_1.png)
+![relative](../assets/images/lab1_1_image_1.png)
 
 *App Engine Studio application templates are not captured in update sets, however modifications to templates will be captured*
 
@@ -40,5 +39,5 @@ All configurations to an application, whether performed in App Engine Studio or 
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
-[PREVIOUS]: ../
-[NEXT]: ../60_Personas_and_roles
+[PREVIOUS]: ../../
+[NEXT]: ../120_Personas_and_roles

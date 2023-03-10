@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Personas & Roles
-parent: 0 | Prepare & Install
-nav_order: 60
+nav_order: 120
 ---
 
 # Personas and Roles
@@ -11,16 +10,16 @@ nav_order: 60
 Ready for review
 {: .label .label-green }
 
+{: .highlight}
+> This part of the lab is for information purposes only. 
+>
+> No activity required.
+
 ## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
-
-{: .highlight}
-> This part of the lab is for information purposes only. 
->
-> No activity required.
 
 ---
 # System Administrator
@@ -101,5 +100,5 @@ platform
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
-[PREVIOUS]: ../50_AES_Overview
-[NEXT]: ../70_Install_Requirements
+[PREVIOUS]: ../110_AES_Overview
+[NEXT]: ../130_Install_Requirements

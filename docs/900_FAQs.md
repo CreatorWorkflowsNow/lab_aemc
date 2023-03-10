@@ -66,3 +66,12 @@ If the out-of-box test suite is not modified, they will run but will also not af
 
 ## Can I change the instance where ATF tests and Instance Scan definitions are executed?
 Yes, this can be accomplished by updating the ‘Instance Type’ value for an Environment record to ‘Testing’. Alternatively, the decision table can be modified to make the decision for ‘Instance Type = Staging’ (for example) point to the Testing sub-flow.
+
+## Cloning? 
+If you plan on cloning your production instance to one or more sub-production instances, you must complete the following:
+- Install all App Engine plugins on all instances prior to cloning
+- Enable ATF and Instance Scan properties in your production instance. 
+
+Additionally, the AEMC plugin must be installed on all instances to appropriately collect application and developer data on development. For more information, see [[Product Documentation: System clone]](https://docs.servicenow.com/csh?topicname=c_SystemClone.html)
+
+Consider enabling and configuring Instance Scan properties in your production instance if you plan to clone.

@@ -2,7 +2,7 @@
 layout: default
 title: How to get Lab Instance
 parent: References
-nav_order: 20
+nav_order: 930
 ---
 
 # How to get your Lab instance

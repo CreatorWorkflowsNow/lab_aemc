@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Pipeline and Deployment
-parent: 1 | Configure
-nav_order: 130
+nav_order: 170
 ---
 
 # Configure - Pipeline and Deployment

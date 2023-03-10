@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Overview
-parent: 1 | Configure
-nav_order: 110
+nav_order: 150
 nav_exclude: true
 ---
 

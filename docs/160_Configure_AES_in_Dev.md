@@ -112,73 +112,54 @@ IN PROGRESS
 
 | 19) Click **Get Started** in the **Set up user access** section | ![](../assets/images/2023-03-06-17-38-21.png) |
 
-Configure App Engine Studio administrator group membership in the [development] instance to manage development activities that occur in the development environment.
-
-While development activities will be managed in the [development] instance, administrators manage application intake, collaboration, and deployment requests in [production].
-
 {: .note}
-*Group membership does not sync across instances, therefore App Engine Studio administrator group membership will also need to be provisioned in the [production] instance as part of the Pipelines and Deployment or Application Intake Guided Setup activities*
+> Configure App Engine Studio administrator group membership in the **development** instance to manage development activities that occur in the development environment.
+> 
+> While development activities will be managed in the **development** instance, administrators manage application intake, collaboration, and deployment requests in **production**.
+> 
+> *Group membership does not sync across instances, therefore App Engine Studio administrator group membership will also need to be provisioned in the [production] instance as part of the Pipelines and Deployment or Application Intake Guided Setup activities*
 
-Click **Configure** in the **Set up admin group** section
+| 20) Click **Configure** in the **Set up admin group** section | ![](../assets/images/2023-03-07-12-13-00.png) |
 
-![](../assets/images/2023-03-07-12-13-00.png)
+| 21) Click **Edit...** on the **Group Members** tab | ![](../assets/images/2023-03-07-12-16-02.png) |
 
-Click **Edit...** on the **Group Members** tab
-
-![](../assets/images/2023-03-07-12-16-02.png)
-
-Move **Jayne Nigel** to the right hand side and click Save like in the image below.
-
-![](../assets/images/2023-03-07_14-07-09.gif)
+| 22) Move **Jayne Nigel** to the right hand side and click Save like in the image below. | ![](../assets/images/2023-03-07_14-07-09.gif) |
 
 {: .important}
-> Jayne will play the part of our App Engine Admin during the lab today.
+> Jayne will play the part of our App Engine Admin later in the lab.
 
-Click the "Group = App Engine Admins" filter on the **Group Members (1)** related list to refresh the list. 
+| 23) Click the "Group = App Engine Admins" filter on the **Group Members (1)** related list to refresh the list.  | ![](../assets/images/2023-03-07-14-22-13.png) |
 
-![](../assets/images/2023-03-07-14-22-13.png)
+You should see **Jayne Nigel** appear in the **User** column after a few seconds. 
 
-You should see **Jayne Nigel** appear in the **User** column. 
+| 24) After that click the "X" in the top right corner to close the modal.  | ![](../assets/images/2023-03-07-14-13-17.png)
 
-After that click the "X" in the top right corner to close the modal. 
-
-![](../assets/images/2023-03-07-14-13-17.png)
-
-Next to **Set up admin group** click "Mark as Complete" then next to **Grant access to your current developers** click "Mark as Complete".
-
-![](../assets/images/2023-03-07-14-17-31.png)
+| 25) Next to **Set up admin group** click "Mark as Complete" then next to **Grant access to your current developers** click "Mark as Complete". | ![](../assets/images/2023-03-07-14-17-31.png) | 
 
 {: .highlight}
->We are skipping **Grant access to your current developers** as it has you create new users from scratch.  While this may work for some organizations, most of the time the user data is already synced from a Production environment. 
+> We are skipping **Grant access to your current developers** for this lab. 
+>
+> This is for configuring Developers in Dev that have pre-existing permissions. 
 >
 
-Click **Configure** next to **Grant access to other users**
+| 26) Click **Configure** next to **Grant access to other users** | ![](../assets/images/2023-03-07-14-23-55.png) |
 
-![](../assets/images/2023-03-07-14-23-55.png)
+| 27) Click **Edit** on the **Group Members** related list. |  ![](../assets/images/2023-03-07-14-25-01.png) |
 
-Click **Edit** on the **Group Members** related list. 
+| 28) Move **Abel Tuter** to the right hand side and click **Save**.  | 
 
-![](../assets/images/2023-03-07-14-25-01.png)
+*The purpose of this step is to add users to the group "App Engine Studio Users" which will grant them access to App Engine Studio via the role **sn_app_eng_studio.user**.*
 
-Move **Abel Tuter** to the right hand side and click **Save**. 
-
-The purpose of this step is to add users to the group "App Engine Studio Users" which will grant them access to App Engine Studio via the role **sn_app_eng_studio.user**.
-
+<!--
 {: .important}
 > In the next section, we will learn how to set up an Intake process for users that want to apply to be an **App Engine Studio User**. 
+-->
 
-Click the **X** in the top right of the modal to close it. 
+| 29) Click the **X** in the top right of the modal to close it. | ![](../assets/images/2023-03-07-14-28-16.png) 
 
-![](../assets/images/2023-03-07-14-28-16.png)
+| 30) Next to **Grant access to other users** click **Mark as Complete**. | ![](../assets/images/2023-03-07-14-46-12.png)
 
-Next to **Grant access to other users** click **Mark as Complete**.
-
-![](../assets/images/2023-03-07-14-46-12.png)
-
-That completes the App Engine Studio Guided Setup portion of the lab. 
-
-In a real world scenario, you would also want to consider all or some of the above settings in your overall Platform cloning strategy.  
-
+Congratulations!  App Engine Studio is ready to go in your Dev environment! 
 
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }

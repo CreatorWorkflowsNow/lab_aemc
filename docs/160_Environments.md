@@ -64,6 +64,23 @@ The next section is to be completed in your **production** instance where AEMC i
 > - Update the Credential records for **pipeline_user**
 > - Attempt Validation again
 
+| 14) Click **New** in the top right | ![](../assets/images/2023-03-09-15-29-57.png)
+| 15) Complete the form as below.  You **will not** be able to Submit until we get the Instance Id in the following steps. | ![](../assets/images/2023-03-09-15-32-08.png) |
+
+{: .warning}
+***Complete the next few steps in a new browser tab so you do not lose your place setting up the Prod environment record.***
+
+**In your new browser tab**
+
+| 16) Navigate to your **Prod** instance
+| 17) Click **All** 
+| 18) Type ```stats.do```
+| 19) Hit Enter
+| 20) Select and copy the value for *Instance ID* | ![](../assets/images/2023-03-09-15-39-10.png)
+
+
+
+
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 

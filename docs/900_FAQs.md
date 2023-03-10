@@ -6,6 +6,9 @@ nav_order: 900
 
 # FAQs
 {: .no_toc }
+{: .d-inline-block }
+Published 3/10/23
+{: .label .label-green }
 
 ## Table of contents
 {: .no_toc .text-delta }

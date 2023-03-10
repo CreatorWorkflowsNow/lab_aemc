@@ -5,10 +5,9 @@ nav_order: 140
 ---
 
 # Configure App Engine Studio in Dev
-
 {: .d-inline-block }
-IN PROGRESS
-{: .label .label-yellow }
+Published 3/10/23
+{: .label .label-green }
 
 *In this lab, we will review and update App Engine Studio developer access to builder tools during development.*
 

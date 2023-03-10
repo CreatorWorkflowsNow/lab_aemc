@@ -1,61 +1,36 @@
 ---
 layout: default
 title: Pipeline and Deployment
-nav_order: 150
+nav_order: 160
 ---
 
 # Configure - Pipeline and Deployment
-{: .no_toc }
 {: .d-inline-block }
 WORK IN PROGRESS
 {: .label .label-yellow }
 
-## Table of contents
-{: .no_toc .text-delta }
+---
 
-1. TOC
-{:toc}
+{: .important}
+> *Before beginning Pipelines and Deployment Setup, ensure your application scope is set to '**Deployment Pipeline**'.* | ![](../assets/images/2023-03-03-16-47-44.png)
+
+*Pipelines enable you to automate the propagation and installation of your applications from one instance to another. Pipelines are powered by the [ServiceNow CI / CD spoke](https://docs.servicenow.com/csh?topicname=cicd-spoke-1.html&version=latest), which enables you to automate processes such as publishing applications to the [application repository](https://docs.servicenow.com/csh?topicname=app-repo.html&version=latest), installing them on target instances, and running [ATF tests](https://docs.servicenow.com/csh?topicname=automated-test-framework.html&version=latest) and/or [instance scans](https://docs.servicenow.com/csh?topicname=hs-landing-page.html&version=latest).*
+
+*Pipeline and Deployment Guided Setup activities do not sync across instances and Pipeline configuration activities are required on all instances (production and sub-production).*
 
 ---
 
-# Overview
-
-Once App Engine Studio Guided Setup has been completed, administrators must complete the Pipeline and Deployment Guided Setup activities.
-
-Pipelines enable you to automate the propagation and installation of your applications from one instance to another. Pipelines are powered by the ServiceNow CI / CD spoke, which enables you to automate processes such as publishing applications to the application repository, installing them on target instances, and running ATF tests and/or instance scans.
-
-Pipeline and Deployment Guided Setup activities do not sync across instances and Pipeline configuration activities are required on all instances (production and sub-production).
-
-{: .note-title}
-> (re)start here
->
-> *The following steps will need to be completed for all instances in your lab environment*
->
-> *This is the spot you will start over at for each environment*
-> 
-> *For the purpose of the lab, we recommend starting in Prod, then Test, then Dev*
-
-{: .highlight}
-If you do not have a Prod, then start with Test, then Dev. 
-
-{: .important}
-*Before beginning Pipelines and Deployment Setup, ensure your application scope is set to '**Deployment Pipeline**'. If not, use the application picker to change the current session's scope.*
-
-| ![](../images/2023-03-03-16-47-44.png)
-
-# Configure production 
-
-In the **production** instance, complete the following steps to configure environments and deployment pipelines to streamline your application deployment process*.
-
 {: .warning}
-Complete these tasks only if you are logged into your production instance.
+Complete the next section only if you are logged into your **production** instance.
+
+*In the **production** instance, complete the following steps to configure environments and deployment pipelines to streamline your application deployment process*.
 
 ## Install 'Deployment Pipeline' plugin in production 
 
-{: .important }
+{: .highlight}
 > This has already been installed for you on the Lab instance. 
-
-For future reference, the name of the Deployment Pipeline plugin is **com.snc.deployment-pipeline**. 
+>
+> For future reference, the name of the Deployment Pipeline plugin is ```com.snc.deployment-pipeline```
 
 ## Configure credentials in production 
 
@@ -64,23 +39,12 @@ Credentials allow your production instance to communicate with sub-production in
 {: .important}
 Only users assigned the **admin** role can create and update Credential Alias records.
 
-- Navigate to **All** 
-- Type **Connections & Credentials** 
-- Click on **Connection & Credential Aliases**
-
-| ![](../images/2023-03-07-15-28-59.png)
-
-- Click the purple **New** button in the top-right to create a new Credential Alias record. 
-
-| ![](../images/2023-03-07-15-38-10.png)
-
-- Set the **Type** to **Credential**.
-
-| ![](../images/2023-03-07-15-37-39.png) |
-
-- Set the **Name** to `Pipeline Credentials` and click **Submit**
-
-| ![](../images/2023-03-08-14-14-44.png) | ![](../images/2023-03-09-15-26-09.png) |
+| 1) Navigate to **All** 
+| 2) Type **Connections & Credentials** 
+| 3) Click on **Connection & Credential Aliases** | ![](../assets/images/2023-03-07-15-28-59.png)
+| 4) Click the purple **New** button in the top-right to create a new Credential Alias record. | ![](../assets/images/2023-03-07-15-38-10.png)
+| 5) Set the **Type** to **Credential**. | ![](../assets/images/2023-03-07-15-37-39.png) |
+| 6) Set the **Name** to `Pipeline Credentials` and click **Submit** | ![](../assets/images/2023-03-08-14-14-44.png)
 
 
 {: .note}
@@ -88,36 +52,29 @@ Only users assigned the **admin** role can create and update Credential Alias re
 > 
 > *If all environments in the Deployment Pipeline will use the **same** credential information (same username/password), then only **one** Credential Alias record will be configured in production*
 > 
-> - i.e., single Credential Alias record named '*Pipeline Credentials'*
+> *- i.e., single Credential Alias record named '*Pipeline Credentials'*
 >
 > *However, if each environment in the Deployment Pipeline will use different credentials (different usernames / passwords), then Credential Alias records will be created for each instance in the production instance*
 > 
-> - i.e., multiple Credential Alias records named 'Dev Credentials', 'Test Credentials', 'Stage Credentials', and 'Prod Credentials'
+> *- i.e., multiple Credential Alias records named 'Dev Credentials', 'Test Credentials', 'Stage Credentials', and 'Prod Credentials'*
 
 {: .highlight}
 For this lab, we will create a single credential for all environments. 
 
-- Click **Pipeline Credentials** to open the record.
-
-|![](../images/2023-03-09-13-48-09.png) |
-
-- Navigate to the **Credentials** Related List and click **New** to add a credential.
-
-|![](../images/2023-03-09-13-49-03.png)|
-
-- Select **Basic Auth Credentials** 
-
-|![](../images/2023-03-09-13-50-33.png)|
+| 7) Click **Pipeline Credentials** to open the record. |![](../assets/images/2023-03-09-13-48-09.png) |
+| 8) Navigate to the **Credentials** Related List and click **New** to add a credential. |![](../assets/images/2023-03-09-13-49-03.png)|
+| 9) Select **Basic Auth Credentials**  |![](../assets/images/2023-03-09-13-50-33.png)|
 
 {: .highlight}
-*Currently, this is the only Credential type supported by App Engine Studio*
+*Currently, **Basic Auth** is the only Credential type supported by App Engine Studio*
 
 {: .note}
-> It is recommended to use a username / password for a service account so that the password does not expire or change. 
+> For your Pipeline Credentials, it is recommended to use a dedicated service account so that the password does not expire or change. 
 >
-> The account **must exist** in the target instance(s) and have admin permissions.
+> The service account **must exist** in the target instance(s) and have admin permissions.
+>
 
-- On the next page, fill out the form with these values and click **Submit**. 
+| 10) On the **Basic Auth Credentials** form, fill in these values and click **Submit**. 
 
 | Field | Value |
 |:---|:---|
@@ -125,45 +82,30 @@ For this lab, we will create a single credential for all environments.
 | Username | pipeline_user |
 | Password | LabTime4Me!
 
-|![](../images/2023-03-09-15-15-17.png)| ![](../images/2023-03-09-15-16-08.png) |
-
-*For more information, see [[Product Documentation: Create a Connection & Credential Alias]](https://docs.servicenow.com/csh?topicname=connection-alias.html)*
-
-## Configure environments in production instance
+|![](../assets/images/2023-03-09-15-15-17.png)
 
 {: .note}
+*For more information, see [[Product Documentation: Create a Connection & Credential Alias]](https://docs.servicenow.com/csh?topicname=connection-alias.html)*
+
+{: .important}
 > *Set up and configure the environments that will be included within your pipelines. These will be referenced when building your pipelines.*
 > 
 > *Your production instance is where your pipeline configurations reside and will be your controller instance.*
 > 
 > *The 'Is Controller?' box will be **checked** on your production instance only. This box will be **unchecked** for all sub-production Environment records.*
+>
+> If you have **more than one** Production environment, then AEMC will only be the controller on a single instance for all of your other Prods. 
 
 **Access the Pipeline and Deployment Guided Setup:**
-- Click **All** 
-- Type **pipelines**
-- Click **Guided Setup** in the Pipelines and Deployments section
 
-| ![](../images/2023-03-07-15-05-18.png)
-
-- Click the green **Get Started** button in the top-right.
-
-| ![](../images/2023-03-07-15-23-27.png)
-
-- Click **Get Started** in the **Configuring your production instance** section
-
-| ![](../images/2023-03-07-15-22-52.png)
-
-- Click **Configure** in the **Configure Environments** section 
-
-| ![](../images/2023-03-09-15-28-57.png) |
-
-- Click **New** in the top right
-
-| ![](../images/2023-03-09-15-29-57.png)|
-
-- Complete the from as below.  You **will not** be able to Submit until we get the Instance Id in the following steps. 
-
-| ![](../images/2023-03-09-15-32-08.png) |
+| 11) Click **All** | ![](../assets/images/2023-03-07-15-05-18.png)
+| 12) Type **pipelines**  
+| 13) Click **Guided Setup** in the Pipelines and Deployments section 
+| 14) Click the green **Get Started** button in the top-right. | ![](../assets/images/2023-03-07-15-23-27.png)
+| 15) Click **Get Started** in the **Configuring your production instance** section | ![](../assets/images/2023-03-07-15-22-52.png)
+| 16) Click **Configure** in the **Configure Environments** section  | ![](../assets/images/2023-03-09-15-28-57.png)
+| 17) Click **New** in the top right | ![](../assets/images/2023-03-09-15-29-57.png)
+| 18) Complete the form as below.  You **will not** be able to Submit until we get the Instance Id in the following steps. | ![](../assets/images/2023-03-09-15-32-08.png) |
 
 | Field | Value |
 |:---|:---|
@@ -177,38 +119,38 @@ For this lab, we will create a single credential for all environments.
 {: .important}
 *For the field "**Instance Id**", we will need to log in to the Dev Lab instance and manually retrieve this value.*
 
-On your Dev instance
- - Click **All** 
- - Type ```stats.do```
- - Hit Enter
+{: .warning}
+***Switch to your Dev instance for these next few steps***
 
-- Select and copy the value for *Instance ID*
+**On your Dev instance**
 
-| ![](../images/2023-03-09-15-39-10.png) |
+| 19) Click **All** 
+| 20) Type ```stats.do```
+| 21) Hit Enter
+| 22) Select and copy the value for *Instance ID* | ![](../assets/images/2023-03-09-15-39-10.png)
 
-- Switch *back* to your Production instance
+{: .warning}
+***Switch back to your Production instance***
 
-- Paste the *Instance ID* value into the *Instance ID* field and click **Validate**.
+| 23) Paste the *Instance ID* value into the *Instance ID* field and click **Validate**. | ![](../assets/images/2023-03-09-15-49-48.png)|
 
-| ![](../images/2023-03-09-15-49-48.png)|
-|![](../images/2023-03-09-15-50-27.png)|
+|![](../assets/images/2023-03-09-15-50-27.png)
 
-- You should see a blue message that says "*The environment was validated successfully*".
-
-|![](../images/2023-03-09-15-51-38.png)|
+| You should see a blue message that says "*The environment was validated successfully*". |![](../assets/images/2023-03-09-15-51-38.png)
 
 {: .warning}
 > *If you see a red error message*
-> ![](../images/2023-03-09-15-53-40.png)
+> ![](../assets/images/2023-03-09-15-53-40.png)
 >
 > *Then you will need to do the following:*
 > - Log in to Dev
-> - Set the password for ```pipeline_user```
+> - Set the password for **pipeline_user**
 > - Log in to Prod
-> - Update the Credential records for ```pipeline_user``
+> - Update the Credential records for **pipeline_user**
 > - Attempt Validation again
 
-*For more information, see [[Product Documentation: Define environments]](https://docs.servicenow.com/csh?topicname=create-environment.html)*
+{: .note}
+*For more information about Environments, see [[Product Documentation: Define environments]](https://docs.servicenow.com/csh?topicname=create-environment.html)*
 
 ## Configure pipelines in production
 
@@ -224,7 +166,7 @@ On your Dev instance
 
 
 
-| ![](/images/image20.png)
+| ![](/assets/images/image20.png)
 
 
 ## Pipelines
@@ -235,7 +177,7 @@ Application movement across pipelines is dictated by the order of the environmen
 
 Be sure the environment order is consistent with the defined instance strategy. The production instance should have the highest 'Order' value *(i.e., Testing: 100, Staging: 200, Production: 300).*
 
-| ![](/images/image21.jpeg)
+| ![](/assets/images/image21.jpeg)
 
 ***Note:** Since the development environment is already identified as the 'Source Environment' on the Pipeline record, a Pipeline Environment Order related record is not required*
 
@@ -271,7 +213,7 @@ Use the search criteria to find the application. Click **Install**.
 
 Repeat and install the Deployment Pipeline plugin in each sub-production instance.
 
-| ![](/images/image22.png)
+| ![](/assets/images/image22.png)
 
 ***Note:** If you have already installed the App Engine Studio bundle in the development instance and promoted up to production, skip this step*
 
@@ -285,7 +227,7 @@ Navigate to Connections & Credentials \Connection & Credential Aliases.
 
 Based on the credential information, take the appropriate approach in configuring Credential Alias records:
 
-| ![](/images/image17.png)
+| ![](/assets/images/image17.png)
 
 
 -   If all environments in the Deployment Pipeline will use the [same] credential information (same username / password), then create a single Credential Alias record with the same details as the Credential Alias created in the production instance
@@ -342,7 +284,7 @@ Enable the system properties that will allow the ATF suite to run in the testing
 
 App Engine Studio ships with an out-of-box test suite as a placeholder, however you are responsible for configuration of the ATF tests. If the out-of- box suite is not modified, they will still run but will not impact the flow.
 
-| ![](/images/image23.jpeg)
+| ![](/assets/images/image23.jpeg)
 
 -   **Enable test / test suite execution *(sn_atf.runner.enabled)***
     -   Check this box on the ***[testing]*** instance to enable automated tests to run as part of the application deployment process
@@ -364,8 +306,20 @@ If you do not enable these properties on the testing instance you will receive a
 {: .note}
 Ensure that the controller instance was configured on all sub-production instances that are part of a pipeline!
 
+{: .note-title}
+> (re)start here
+>
+> *The following steps will need to be completed for all instances in your lab environment*
+>
+> *This is the spot you will start over at for each environment*
+> 
+> *For the purpose of the lab, we recommend starting in Prod, then Test, then Dev*
+
+{: .highlight}
+If you do not have a Prod, then start with Test, then Dev. 
+
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
-[PREVIOUS]: ../140_Configure_AES_in_Dev
-[NEXT]: ../160_App_Intake
+[PREVIOUS]: ../150_Credentials_Setup
+[NEXT]: ../190_App_Intake

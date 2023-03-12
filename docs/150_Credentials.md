@@ -1,10 +1,11 @@
 ---
 layout: default
-title: Configure Credentials
+title: Credentials
 nav_order: 150
 ---
 
 # Configure Credentials
+
 {: .d-inline-block }
 Published 3/10/23
 {: .label .label-green }
@@ -84,4 +85,4 @@ Only users assigned the **admin** role can create and update Credential Alias re
 [Next][NEXT]{: .btn .btn-purple }
 
 [PREVIOUS]: ../140_Configure_AES
-[NEXT]: ../160_Environments
+[NEXT]: ../160_Environments_Prod

@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Sys Admin Guide Import
+parent: References
 nav_order: 999
-nav_exclude: true
+nav_exclude: false
 ---
 
 ServiceNow App Engine Governance Lab
@@ -33,7 +34,7 @@ With guidance-driven development flows and pre-configured application templates,
 
 Administrators control which applications to deploy by reviewing and testing applications created by App Engine Studio developers -- and by delegating development to business units in your organization, administrators are freed up to address more strategic, system-wide issues.
 
-![](/images/image2.jpeg)
+![](../assets/images/image2.jpeg)
  
 *\* App Engine Studio application templates are not captured in update sets, however modifications to templates will be captured*
 
@@ -151,7 +152,7 @@ Applications are deployed to the production instance once developed and successf
 
 If your organization uses sandbox or staging environments in addition to test and development, they can be incorporated to the instance strategy accordingly based on organizational needs.
 
-![](/images/image3.png)
+![](../assets/images/image3.png)
 
 
 *Example instance strategy with one production instance and three sub-production instances*
@@ -172,7 +173,7 @@ Before installing the application from the ServiceNow Store, verify the instance
 
 In the ServiceNow Store, use the search criteria to find App Engine Studio.
 
-![](/images/image4.png)
+![](../assets/images/image4.png)
  
 Click **Opt-in** and agree to the ServiceNow terms and conditions to verify entitlements.
 
@@ -184,7 +185,7 @@ To install the App Engine Studio application (***com.snc.app-engine-studio***), 
 
 Use the search criteria to find the App Engine Studio application. Click **Install / Update All**.
 
-![](/images/image5.jpeg)
+![](../assets/images/image5.jpeg)
  
 The App Engine Studio bundle will be installed in the development instance-- including the App Engine Studio application and all dependent applications.
 
@@ -202,7 +203,7 @@ Repeat this process on all instances for cloning purposes.
 
 # How do I configure App Engine Studio? {#how-do-i-configure-app-engine-studio}
 
-![](/images/image6.jpeg)
+![](../assets/images/image6.jpeg)
 
 ***\*\*** Repeat steps across all sub-production instances, as necessary*
 
@@ -235,11 +236,11 @@ The App Engine Studio bundle has three Guided Setup modules to assist in configu
 
 Navigate to **App Engine Studio \Configuration \Guided Setup** in your development instance to access the App Engine Studio Guided Setup.
 
-![](/images/image7.png)
+![](../assets/images/image7.png)
 
 ***Note**: Before beginning App Engine Studio Guided Setup, ensure your application scope is set to 'App Engine Studio'. If not, use the application picker to change the current session's scope*
 
-![](/images/image8.jpeg)
+![](../assets/images/image8.jpeg)
 
 
 **Review and set up tooling in the development instance**
@@ -306,7 +307,7 @@ Developers can leverage Flow Designer capabilities while creating logic and auto
 
 Consider restricting developer access to Flow Designer Resources using content filtering for Flow Designer. This allows administrators to manage access to Flow Designer resources and specify which features App Engine Studio users can leverage while building applications.
 
-![](/images/image9.jpeg)
+![](../assets/images/image9.jpeg)
 
 This step is not required as part of the initial application setup.
 
@@ -320,7 +321,7 @@ Review App Engine Studio developer access to the Catalog Builder tool's catalog 
 
 By default, App Engine Studio developers can leverage catalog templates to quickly create record producers or catalog items. Developers can also publish catalog items to any catalog. If you wish to limit access to templates or restrict publishing access to catalogs or categories, update the access accordingly in Catalog Builder.
 
-![](/images/image10.png)
+![](../assets/images/image10.png)
 
 
 This step is not required as part of the initial application setup.
@@ -340,7 +341,7 @@ The App Engine Studio application does not ship with any out-of-box Instance Sca
 
 Work with professional ServiceNow developers to configure Instance Scan definitions and enforce best practices in your environments.
 
-![](/images/image11.jpeg)
+![](../assets/images/image11.jpeg)
 
 **Enable and configure Instance Scan properties in your production instance if you plan to clone!**
 
@@ -354,7 +355,7 @@ Configure the admin group and other general settings for App Engine Studio users
 
 Configure App Engine Studio administrator group membership in the [development] instance to manage development activities that occur in the development environment.
 
-![](/images/image12.jpeg)
+![](../assets/images/image12.jpeg)
 
 
 While development activities will be managed in the [development] instance, administrators manage application intake, collaboration, and deployment requests in [production].
@@ -373,7 +374,7 @@ c.  **Grant access to other users in development**
 
 After provisioning access for existing developers, grant App Engine Studio access to other users within the organization by adding them to the 'App Engine Studio Users' group.
 
-![](/images/image13.png)
+![](../assets/images/image13.png)
 
 [Back to top](#top){: .btn .btn-purple }
 
@@ -392,13 +393,13 @@ Pipeline and Deployment Guided Setup activities do not sync across instances and
 
 Refer to the process flow on page **[9]** for an overview of the Pipeline and Deployment Guided Setup.
 
-![](/images/image14.jpeg)
+![](../assets/images/image14.jpeg)
 
 ***Note**: Before beginning Pipelines and Deployment Studio Guided Setup, ensure your application*
 
 *scope is set to '**Deployment Pipeline**'. If not, use the application picker to change the current session's scope*
 
-![](/images/image15.png)
+![](../assets/images/image15.png)
 
 1.  **[Configure your production instance]**
 
@@ -412,7 +413,7 @@ To install the Deployment Pipeline plugin, (***com.snc.deployment-pipeline**)*, 
 
 Use the search criteria to find the application. Click **Install**.
 
-![](/images/image16.png)
+![](../assets/images/image16.png)
 
 ***Note:** If you have already installed the App Engine Studio bundle in the development instance and promoted up to production, skip this step*
 
@@ -424,7 +425,7 @@ In production, navigate to Connections & Credentials \Connection & Credential Al
 
 Only users assigned the admin role can create and update Credential Alias records.
 
-![](/images/image17.png)
+![](../assets/images/image17.png)
 
 Credential Alias
 
@@ -484,7 +485,7 @@ details.
 
 Select Basic Auth Credentials to populate the Basic Auth Credential form (currently, this is the only Credential type supported by App Engine Studio).
 
-![](/images/image18.jpeg)
+![](../assets/images/image18.jpeg)
 
 It is recommended to use a username / password for a service account so that the password does not expire or change. The account [must exist in the] [target instance(s) and have admin permissions.]
 
@@ -498,7 +499,7 @@ Your production instance is where your pipeline configurations reside and will b
 
 **The 'Is Controller?' box will be [checked] on your production instance only. This box will be [unchecked] for all sub-production Environment records.**
 
-![](/images/image19.jpeg)
+![](../assets/images/image19.jpeg)
 
 **Environments**
 
@@ -570,7 +571,7 @@ A pipeline defines the path an application takes from the development to product
 
 Set up and configure your pipelines by specifying the environments to include along with their position in the pipeline.
 
-![](/images/image20.png)
+![](../assets/images/image20.png)
 
 
 **Pipelines**
@@ -618,7 +619,7 @@ Application movement across pipelines is dictated by the order of the environmen
 
 Be sure the environment order is consistent with the defined instance strategy. The production instance should have the highest 'Order' value *(i.e., Testing: 100, Staging: 200, Production: 300).*
 
-![](/images/image21.jpeg)
+![](../assets/images/image21.jpeg)
 
 ***Note:** Since the development environment is already identified as the 'Source Environment' on the Pipeline record, a Pipeline Environment Order related record is not required*
 
@@ -679,7 +680,7 @@ Use the search criteria to find the application. Click **Install**.
 
 Repeat and install the Deployment Pipeline plugin in each sub-production instance.
 
-![](/images/image22.png)
+![](../assets/images/image22.png)
 
 ***Note:** If you have already installed the App Engine Studio bundle in the development instance and promoted up to production, skip this step*
 
@@ -693,7 +694,7 @@ Navigate to Connections & Credentials \Connection & Credential Aliases.
 
 Based on the credential information, take the appropriate approach in configuring Credential Alias records:
 
-![](/images/image17.png)
+![](../assets/images/image17.png)
 
 
 -   If all environments in the Deployment Pipeline will use the [same] credential information (same username / password), then create a single Credential Alias record with the same details as the Credential Alias created in the production instance
@@ -750,7 +751,7 @@ Enable the system properties that will allow the ATF suite to run in the testing
 
 App Engine Studio ships with an out-of-box test suite as a placeholder, however you are responsible for configuration of the ATF tests. If the out-of- box suite is not modified, they will still run but will not impact the flow.
 
-![](/images/image23.jpeg)
+![](../assets/images/image23.jpeg)
 
 -   **Enable test / test suite execution *(sn_atf.runner.enabled)***
     -   Check this box on the ***[testing]*** instance to enable automated tests to run as part of the application deployment process
@@ -780,11 +781,11 @@ If you do not enable these properties on the testing instance you will receive a
 
 Navigate to **App Engine Studio \Application Intake \Guided Setup** in your [production] instance to access the Application Intake Guided Setup.
 
-![](/images/image24.jpeg)
+![](../assets/images/image24.jpeg)
 
 ***Note**: Before beginning Application Intake Guided Setup, ensure your application scope is set to 'Application Intake'. If not, use the application picker to change the current session's scope.*
 
-![](/images/image25.png)
+![](../assets/images/image25.png)
 
 
 1.  **[Turn on and configure the intake request process in production]**
@@ -793,7 +794,7 @@ You'll need to activate the catalog item on your **production instance** and con
 
 a.  **Activate the catalog item where developers will submit their application ideas**
 
-![](/images/image26.jpeg)
+![](../assets/images/image26.jpeg)
 
 
 Activate the 'Apply for Citizen Development' catalog item and allow developers to submit application ideas for screening by the App Engine Studio Administrators.
@@ -804,7 +805,7 @@ Administrators can modify the out-of-box catalog item in Catalog Builder accordi
 
 b.  **Activate user provisioning**
 
-![](/images/image27.jpeg)
+![](../assets/images/image27.jpeg)
 
 Activate the property on your [production] instance to allow the system to provision users to the App Engine Studio Users group in a target development instance upon the approval of an application intake request.
 
@@ -838,7 +839,7 @@ Once added to the group, members are assigned the **sn_app_eng_studio.user** rol
 
 [Before granting access to the App Engine Studio application, ensure users have completed the] [appropriate citizen development learning paths and trainings available in Now Learning!]
 
-![](/images/image28.png)
+![](../assets/images/image28.png)
 
 **Considerations for development security:**
 
@@ -861,7 +862,7 @@ App Engine Studio's collaboration feature uses delegated development, allowing a
 
 The **admin** role is required to create custom App Engine Studio roles available to developers when adding collaborators.
 
-![](/images/image29.jpeg)
+![](../assets/images/image29.jpeg)
 
 
 When a collaboration request is submitted and the collaborator already has access to App Engine Studio (belongs to the 'App Engine Studio Users' group), then the request will be approved automatically.
@@ -880,7 +881,7 @@ For more information, see: *[[Product Documentation: Delegated development in Ap
 
 ***Note**: Before editing the Application Intake process, ensure your application scope is set to **'**Application Intake'**. If not, use the application picker to change the current session's scope*
 
-![](/images/image30.png)
+![](../assets/images/image30.png)
 
 [Back to top](#top){: .btn .btn-purple }
 
@@ -940,7 +941,7 @@ When an application is submitted for IT review, the system generates and assigns
 
 Administrators can review application, requestor, and deployment details from the Deployment Request. Pipeline and environment information for applications are available in the 'Deployment Details' section of the request form.
 
-![](/images/image31.png)
+![](../assets/images/image31.png)
 
 
 **Deployment Request States**
@@ -1016,7 +1017,7 @@ Once an application has successfully completed all testing activities from requi
 
 When administrators approve an application to promote an application to production, the Deployment Request 'State' will change to **Closed -- Published**. The application will be published to the application repository and installed on the production instance. Assign roles appropriately so that users can access the application across instances, as necessary.
 
-![](/images/image32.png)
+![](../assets/images/image32.png)
  
 For more information, see:
 
@@ -1032,11 +1033,11 @@ For more information, see:
 
 App Engine Studio offers developers pre-configured application templates that can be used to jumpstart development and accelerate time to value. In addition to the out-of-box templates, App Engine Studio Administrators can configure custom templates for their developers.
 
-![](/images/image33.png)
+![](../assets/images/image33.png)
 
 These templates can be configured with pre-defined Data, Experiences, Logic and Automation, and Security features, based on common use cases across the organization.
 
-![](/images/image34.jpeg)
+![](../assets/images/image34.jpeg)
 
 Custom application templates can be created from existing applications, or from scratch. Once a template has been configured, make it available to developers by publishing it in App Engine Studio.
 

@@ -1,14 +1,27 @@
 ---
 layout: default
-title: Configure Environments
+title: Environments in Prod
 nav_order: 160
 ---
 
-# Configure Environments
+# Configure Environments in Prod 
 
 {: .d-inline-block }
 IN PROGRESS
 {: .label .label-yellow }
+
+{: .note}
+> *At times in the lab, the term 'instance' and 'environment' are used interchangeably.  They both refer to a ServiceNow instance.*
+
+Environment ```[sn_pipeline_environment]``` records contain information about a ServiceNow instance and how to access it. 
+
+Together, they make up a Pipeline. You must first configure the Environment records before the Pipeline can be setup. 
+
+Environment records do not sync across instances so creation is required on all instances (production and sub-production).
+
+In this section, you will configure Environments for your Pipeline on your Prod instance. 
+
+---
 
 # Configure Dev Environment record 
 
@@ -54,7 +67,7 @@ IN PROGRESS
 
 | 13) Paste the *Instance ID* value into the *Instance ID* field and click **Validate**. | ![](../assets/images/2023-03-09-15-49-48.png)|
 
-|![](../assets/images/2023-03-09-15-50-27.png)
+| ![](../assets/images/2023-03-09-15-50-27.png)
 
 | You should see a blue message that says "*The environment was validated successfully*". |![](../assets/images/2023-03-09-15-51-38.png)
 
@@ -69,10 +82,16 @@ IN PROGRESS
 > - Update the Credential records for **pipeline_user**
 > - Attempt Validation again
 
-# Create the Prod Envirnoment Record
+| 14) Click **Submit** to finish creating the '*Dev*' environment record
 
-| 14) Click **New** in the top right | ![](../assets/images/2023-03-09-15-29-57.png)
-| 15) Complete the form as below.  You **will not** be able to Submit until we get the Instance Id in the following steps. | ![](../assets/images/2023-03-09-15-32-08.png) |
+***You have now created your Dev Environment record in your Prod instance.***
+
+---
+
+# Create the Prod Environment Record
+
+| 15) Click **New** in the top right | ![](../assets/images/2023-03-09-15-29-57.png)
+| 16) Complete the form as below.  You **will not** be able to Submit until we get the Instance Id in the following steps. | ![](../assets/images/2023-03-09-15-32-08.png) |
 
 | Field | Value |
 |:---|:---|
@@ -88,22 +107,43 @@ IN PROGRESS
 
 **In your new browser tab**
 
-| 16) Navigate to your **Prod** instance
-| 17) Click **All** 
-| 18) Type ```stats.do``` | ![](../assets/images/2023-03-10-16-31-47.png) 
-| 19) Hit Enter
-| 20) Select and copy the value for *Instance ID* | ![](../assets/images/2023-03-09-15-39-10.png)
+| 17) Navigate to your **Prod** instance
+| 18) Click **All** 
+| 19) Type ```stats.do``` | ![](../assets/images/2023-03-10-16-31-47.png) 
+| 20) Hit Enter
+| 21) Select and copy the value for *Instance ID* | ![](../assets/images/2023-03-09-15-39-10.png)
 
 {: .warning}
-***Switch back to your broswer tab where Prod is open with Guided Setup and the Environment record***
+***Switch back to your browser tab where Prod is open with Guided Setup and the Environment record***
 
-| 13) Paste the *Instance ID* value into the *Instance ID* field and click **Validate**. | ![](../assets/images/2023-03-09-15-49-48.png)|
+| 22) Paste the *Instance ID* value into the *Instance ID* field and click **Validate**. | ![](../assets/images/2023-03-12-16-58-04.png)
 
-![](../assets/images/2023-03-10-16-33-43.png)
+| ![](../assets/images/2023-03-09-15-50-27.png)
+
+| You should see a blue message that says "*The controller environment was validated successfully*". | ![](../assets/images/2023-03-12-17-05-44.png)
+
+{: .warning}
+> *If you see a red error message*
+> ![](../assets/images/2023-03-09-15-53-40.png)
+>
+> *Then you will need to do the following:*
+> - Open a new browser tab to Prod
+> - Set the password for **pipeline_user**
+> - Update the Credential records for **pipeline_user**
+> - Attempt Validation again
+
+| 23) Click **Submit** to finish creating the '*Prod*' environment record | ![](../assets/images/2023-03-12-16-59-46.png)
+
+***You have now created your Prod environment record in your Prod environment.***
+
+| 24) Click the top-right 'X' to close the modal. | ![](../assets/images/2023-03-12-17-09-24.png)
+
+| 25) In the '*Configure environments*' section', Click '**Mark as Complete**' | ![](../assets/images/2023-03-12-17-10-18.png)
 
 
+***That completes setup of your Environment record in the Prod environment.***
 
-
+***Next up, you will configure the Pipeline in the Prod environment.***
 
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
@@ -115,4 +155,4 @@ IN PROGRESS
 *For more information about Environments, see [[Product Documentation: Define environments]](https://docs.servicenow.com/csh?topicname=create-environment.html)*
 
 [PREVIOUS]: ../150_Credentials
-[NEXT]: ../170_Pipeline
+[NEXT]: ../170_Pipeline_Prod

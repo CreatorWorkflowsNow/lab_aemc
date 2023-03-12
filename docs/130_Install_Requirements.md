@@ -5,7 +5,7 @@ nav_order: 130
 ---
 
 # Install Requirements
-{: .no_toc }
+
 {: .d-inline-block }
 Published 3/10/23
 {: .label .label-green }

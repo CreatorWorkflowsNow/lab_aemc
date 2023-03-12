@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Configure Pipeline
+title: Pipeline in Prod
 nav_order: 170
 ---
 
-# Configure Pipeline
+# Configure the Pipeline in Prod
 {: .d-inline-block }
 WORK IN PROGRESS
 {: .label .label-yellow }
@@ -13,11 +13,11 @@ WORK IN PROGRESS
 {: .important}
 > *Before beginning Pipelines and Deployment Setup, ensure your application scope is set to '**Deployment Pipeline**'.* | ![](../assets/images/2023-03-03-16-47-44.png)
 -->
-*Pipelines enable you to automate the propagation and installation of your applications from one instance to another. Pipelines are powered by the [ServiceNow CI / CD spoke](https://docs.servicenow.com/csh?topicname=cicd-spoke-1.html&version=latest), which enables you to automate processes such as publishing applications to the [application repository](https://docs.servicenow.com/csh?topicname=app-repo.html&version=latest), installing them on target instances, and running [ATF tests](https://docs.servicenow.com/csh?topicname=automated-test-framework.html&version=latest) and/or [instance scans](https://docs.servicenow.com/csh?topicname=hs-landing-page.html&version=latest).*
+Pipelines enable you to automate the propagation and installation of your applications from one instance to another. Pipelines are powered by the [ServiceNow CI / CD spoke](https://docs.servicenow.com/csh?topicname=cicd-spoke-1.html&version=latest), which enables you to automate processes such as publishing applications to the [application repository](https://docs.servicenow.com/csh?topicname=app-repo.html&version=latest), installing them on target instances, and running [ATF tests](https://docs.servicenow.com/csh?topicname=automated-test-framework.html&version=latest) and/or [instance scans](https://docs.servicenow.com/csh?topicname=hs-landing-page.html&version=latest).
 
-*Pipeline and Deployment Setup activities do not sync across instances and Pipeline configuration activities are required on all instances (production and sub-production).*
+Pipeline and Deployment Setup activities do not sync across instances and Pipeline configuration activities are required on all instances (production and sub-production).
 
-*In the **production** instance, complete the following steps to configure environments and deployment pipelines to streamline your application deployment process*.
+In the **production** instance, complete the following steps to configure environments and deployment pipelines to streamline your application deployment process.
 
 {: .highlight}
 > The 'Deployment Pipeline' plugin has already been installed for you in this Lab. 
@@ -31,6 +31,7 @@ WORK IN PROGRESS
 
 *Set up and configure your pipeline by specifying the environments to include along with their position in the pipeline.*
 
+| 1) In the '*Configure piplines*' section click **Configure**. | ![](../assets/images/2023-03-12-17-25-15.png)
 
 
 ---

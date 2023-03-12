@@ -5,22 +5,18 @@ nav_order: 160
 ---
 
 # Configure Environments
+
 {: .d-inline-block }
 IN PROGRESS
 {: .label .label-yellow }
 
-{: .warning}
-> **Don't let the name fool you.**
->
->The next section is to be completed in your **production** instance where AEMC is installed.
-
-- [Configure Environments](#configure-environments)
-- [Configure Dev Environment record](#configure-dev-environment-record)
-- [Create the Prod Envirnoment Record](#create-the-prod-envirnoment-record)
-- [Additional Notes](#additional-notes)
-
-
 # Configure Dev Environment record 
+
+{: .warning}
+>This section is to be completed in your **production** instance where AEMC is installed.
+
+{: .highlight}
+> *You will be configuring the **DEV** environment record in your Prod instance.*
 
 | 1) Click **All** | ![](../assets/images/2023-03-07-15-05-18.png)
 | 2) Type **pipelines**  

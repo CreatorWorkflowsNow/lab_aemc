@@ -9,9 +9,18 @@ nav_order: 160
 IN PROGRESS
 {: .label .label-yellow }
 
-
 {: .warning}
-The next section is to be completed in your **production** instance where AEMC is installed.
+> **Don't let the name fool you.**
+>
+>The next section is to be completed in your **production** instance where AEMC is installed.
+
+- [Configure Environments](#configure-environments)
+- [Configure Dev Environment record](#configure-dev-environment-record)
+- [Create the Prod Envirnoment Record](#create-the-prod-envirnoment-record)
+- [Additional Notes](#additional-notes)
+
+
+# Configure Dev Environment record 
 
 | 1) Click **All** | ![](../assets/images/2023-03-07-15-05-18.png)
 | 2) Type **pipelines**  
@@ -40,7 +49,7 @@ The next section is to be completed in your **production** instance where AEMC i
 **On your Dev instance**
 
 | 9) Click **All** 
-| 10) Type ```stats.do```
+| 10) Type ```stats.do``` | ![](../assets/images/2023-03-10-16-31-47.png) 
 | 11) Hit Enter
 | 12) Select and copy the value for *Instance ID* | ![](../assets/images/2023-03-09-15-39-10.png)
 
@@ -64,8 +73,19 @@ The next section is to be completed in your **production** instance where AEMC i
 > - Update the Credential records for **pipeline_user**
 > - Attempt Validation again
 
+# Create the Prod Envirnoment Record
+
 | 14) Click **New** in the top right | ![](../assets/images/2023-03-09-15-29-57.png)
 | 15) Complete the form as below.  You **will not** be able to Submit until we get the Instance Id in the following steps. | ![](../assets/images/2023-03-09-15-32-08.png) |
+
+| Field | Value |
+|:---|:---|
+| Name | ```Prod``` |
+| Instance Type| ```Production``` |
+| Instance URL | ```The full URL of your Prod Lab instance (Ex. https://your-lab-123.service-now.com)``` |
+| Instance credential | ```sn_deploy_pipeline.Pipeline_Credentials``` |
+| Is Controller? | ```Leave unchecked``` |
+| Instance Id | ```*See instructions below*``` |
 
 {: .warning}
 ***Complete the next few steps in a new browser tab so you do not lose your place setting up the Prod environment record.***
@@ -74,9 +94,17 @@ The next section is to be completed in your **production** instance where AEMC i
 
 | 16) Navigate to your **Prod** instance
 | 17) Click **All** 
-| 18) Type ```stats.do```
+| 18) Type ```stats.do``` | ![](../assets/images/2023-03-10-16-31-47.png) 
 | 19) Hit Enter
 | 20) Select and copy the value for *Instance ID* | ![](../assets/images/2023-03-09-15-39-10.png)
+
+{: .warning}
+***Switch back to your broswer tab where Prod is open with Guided Setup and the Environment record***
+
+| 13) Paste the *Instance ID* value into the *Instance ID* field and click **Validate**. | ![](../assets/images/2023-03-09-15-49-48.png)|
+
+![](../assets/images/2023-03-10-16-33-43.png)
+
 
 
 

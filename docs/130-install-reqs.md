@@ -115,5 +115,5 @@ Repeat and install the Deployment Pipeline plugin in each sub-production instanc
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
-[PREVIOUS]: /lab_aemc/docs/personas-roles
+[PREVIOUS]: /lab_aemc/docs/personas-and-roles
 [NEXT]: /lab_aemc/docs/configure-aes

@@ -241,5 +241,5 @@ Additional Notes
 > If you have **more than one** Production environment, then AEMC will only be the controller on a single instance for all of your other Prods. 
 
 
-[PREVIOUS]: ../docs/Configure_Prod_Environments
-[NEXT]: ../docs/Configure_Prod_AES_Admin
+[PREVIOUS]: /docs/Configure_Prod_Environments
+[NEXT]: /docs/Configure_Prod_AES_Admin

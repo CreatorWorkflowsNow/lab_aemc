@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Environments in Prod
+title: Environments
 nav_order: 220
 parent: Configure Prod
 grand_parent: Pipelines & Deployments
@@ -150,7 +150,6 @@ In this section, you will configure Environments for your Pipeline on your Prod 
 
 ***Next up, you will configure the Pipeline in the Prod environment.***
 
-<!-- [Previous][PREVIOUS]{: .btn .mr-4 } --> 
 [Next][NEXT]{: .btn .btn-purple }
 
 --- 
@@ -159,5 +158,4 @@ In this section, you will configure Environments for your Pipeline on your Prod 
 {: .note}
 *For more information about Environments, see [[Product Documentation: Define environments]](https://docs.servicenow.com/csh?topicname=create-environment.html)*
 
-[PREVIOUS]: ../150_Credentials
-[NEXT]: ../170_Pipeline_Prod
+[NEXT]: /docs/Configure_Prod_Pipeline

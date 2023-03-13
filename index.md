@@ -16,7 +16,7 @@ We will cover concepts such as Pipelines and Deployments, Onboarding Developers,
 {: .highlight }
 > The content in this guide applies to App Engine Studio Version 22.0.3
 
-[Let's Go!](docs/110_AES_Overview){: .btn .btn-green}
+[Let's Go!][LETSGO]{: .btn .btn-green}
 
 <!-- Wrap text
 |Name|Description| |
@@ -38,3 +38,5 @@ We will cover concepts such as Pipelines and Deployments, Onboarding Developers,
 [Lab4]: ./lab_4_Manage_App_Deployment/
 [Lab5]: ./lab_5_Bonus_Info/
 -->
+
+[LETSGO]: /docs/aes_overview

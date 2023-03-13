@@ -2,6 +2,7 @@
 layout: default
 title: App Engine Studio
 nav_order: 140
+permalink: /docs/configure_aes
 ---
 
 # Configure App Engine Studio
@@ -146,5 +147,5 @@ Published 3/10/23
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
-[PREVIOUS]: ../130_Install_Requirements
-[NEXT]: ../150_Credentials
+[PREVIOUS]: /docs/install_reqs
+[NEXT]: /docs/credentials

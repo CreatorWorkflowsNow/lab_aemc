@@ -2,6 +2,7 @@
 layout: default
 title: AES Overview
 nav_order: 110
+permalink: /docs/aes_overview
 ---
 
 # App Engine Studio Overview
@@ -39,5 +40,5 @@ All configurations to an application, whether performed in App Engine Studio or 
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
-[PREVIOUS]: ../../
-[NEXT]: ../120_Personas_and_roles
+[PREVIOUS]: /
+[NEXT]: /docs/personas_roles

@@ -2,6 +2,7 @@
 layout: default
 title: Credentials
 nav_order: 150
+permalink: /docs/credentials
 ---
 
 # Configure Credentials

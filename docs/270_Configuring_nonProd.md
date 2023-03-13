@@ -64,9 +64,8 @@ permalink: /docs/Configure_nonProd
 | 14) Click **Submit** to finish creating the '*Prod*' environment record | ![](../assets/images/2023-03-12-16-59-46.png)
 
 {: .highlight}
-> If you get a message that says '*This is an invalid URL.*', click 'X' in the top right and close the modal. 
+> If you get a message like below that says '*This is an invalid URL.*', click 'X' in the top right and close the modal. 
+>
+> That error can be safely ignored.
 
-| ![](../assets/images/2023-03-13-10-48-10.png)
-
-{: .highlight}
-> This error can be safely ignored.
+| ![](/assets/images/2023-03-13-10-48-10.png)

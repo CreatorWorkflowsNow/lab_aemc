@@ -104,5 +104,5 @@ platform
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
-[PREVIOUS]: /docs/aes-overview
-[NEXT]: /docs/install-reqs
+[PREVIOUS]: /lab_aemc/docs/aes-overview
+[NEXT]: /lab_aemc/docs/install-reqs

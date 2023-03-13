@@ -40,5 +40,5 @@ All configurations to an application, whether performed in App Engine Studio or 
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
-[PREVIOUS]: /
-[NEXT]: /docs/personas-roles
+[PREVIOUS]: /lab_aemc/
+[NEXT]: /lab_aemc/docs/personas-roles

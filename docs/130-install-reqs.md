@@ -100,5 +100,5 @@ Repeat this process on all instances for cloning purposes.
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
-[PREVIOUS]: /docs/personas-roles
-[NEXT]: /docs/configure-aes
+[PREVIOUS]: /lab_aemc/docs/personas-roles
+[NEXT]: /lab_aemc/docs/configure-aes

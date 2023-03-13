@@ -39,4 +39,4 @@ We will cover concepts such as Pipelines and Deployments, Onboarding Developers,
 [Lab5]: ./lab_5_Bonus_Info/
 -->
 
-[LETSGO]: /docs/aes-overview
+[LETSGO]: ./docs/aes-overview

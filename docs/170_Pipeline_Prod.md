@@ -4,7 +4,10 @@ title: Pipeline in Prod
 nav_order: 170
 ---
 
-# Configure the Pipeline in Prod
+# Configure Pipeline
+*Part of: Configuring your production instance*
+{: .fs-4 .fw-300 }
+
 {: .d-inline-block }
 WORK IN PROGRESS
 {: .label .label-yellow }
@@ -32,42 +35,64 @@ In the **production** instance, complete the following steps to configure enviro
 *Set up and configure your pipeline by specifying the environments to include along with their position in the pipeline.*
 
 | 1) In the '*Configure piplines*' section click **Configure**. | ![](../assets/images/2023-03-12-17-25-15.png)
+| 2) Click **New** | ![](../assets/images/2023-03-12-17-27-31.png)
+
+| 3) Complete the form as below.  Click Submit when complete.
+
+| Field | Value 
+|:---|:---
+| Name | ```My first pipeline``` 
+| Pipeline Type | ```Application Deployment```
+| Source Environment | ```Dev```
+| Active | Checked
+
+{: .note}
+> *Once a pipeline has been created, use the **Pipeline Environments Order** Related List on the Pipeline record to configure the instance order for the pipeline. 
+> 
+> Create a record in the related list for all instances ***except*** the development instance and specify the environment's order within the pipeline.*
+>
+> *Application movement across pipelines is dictated by the order of the environments in the Pipeline Environment Order related list, and applications are promoted based on ascending 'Order' values.*
+>
+> *Be sure the environment order is consistent with the defined instance strategy. The production instance should have the highest 'Order' value *(i.e., Testing: 100, Staging: 200, Production: 300).*
+>
+
+| 4) Click **My first pipeline** to open the record | ![](../assets/images/2023-03-12-17-31-52.png)
+| 5) In the *Pipeline Environments Order* related list, Click** **New** | ![](../assets/images/2023-03-12-17-32-31.png)
+
+| 6) Complete the form as below.  Click Submit when complete.
 
 
----
-{: .warning}
-> Old data below here
-
-
-
-| ![](/assets/images/image20.png)
-
-
-## Pipelines
-
-Once a pipeline has been created, use the **Pipeline Environments Order** Related List on the Pipeline record to configure the instance order for the pipeline. Create a record in the related list for all instances *[except]* the development instance and specify the environment's order within the pipeline.
-
-Application movement across pipelines is dictated by the order of the environments in the Pipeline Environment Order related list, and applications are promoted based on ascending 'Order' values.
-
-Be sure the environment order is consistent with the defined instance strategy. The production instance should have the highest 'Order' value *(i.e., Testing: 100, Staging: 200, Production: 300).*
-
-| ![](/assets/images/image21.jpeg)
+| Field | Value 
+|:---|:---
+| Pipeline | ```My first pipeline``` 
+| Environment | ```Production```
+| Order | ```100```
 
 ***Note:** Since the development environment is already identified as the 'Source Environment' on the Pipeline record, a Pipeline Environment Order related record is not required*
 
-**Pipeline Environment Orders**
+| 7) Click 'X' to close the modal | ![](../assets/images/2023-03-12-17-34-44.png)
+| 8) In the '*Configure Pipelines*' section click **Mark as Complete** | ![](../assets/images/2023-03-12-17-35-33.png) 
 
+Congratulations! You have created a new **Pipeline** in your Prod environment. 
+
+Next, we will...
+
+---
+
+{: .note}
 *For more information, see [[Product Documentation: Create a pipeline]](https://docs.servicenow.com/csh?topicname=create-pipeline.html)*
 
-b.  **Add users to the App Engine Studio Administrators group in production instance**
+--
 
-Configure App Engine Studio administrator group membership in the [production] instance to manage application intake and deployment requests.
+{: .warning}
+> Old data below here
 
-Ensure the group membership in [production] is consistent with the App Engine Studio administrators identified in the [development] instance.
+| ![](/assets/images/image21.jpeg)
 
-Group membership does not sync between environments and must be updated in both production and development.
 
-***Note:** If group membership is empty in the production instance, or if the Deployment Pipeline plugin is not installed, the system will refer to App Engine Studio Administrator group membership in the development instance*
+**Pipeline Environment Orders**
+
+
 
 2.  **[Configure sub-production instances]**
 

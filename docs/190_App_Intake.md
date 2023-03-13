@@ -1,7 +1,8 @@
 ---
 layout: default
 title: App Intake
-nav_order: 190
+nav_order: 300
+nav_exclude: true 
 ---
 
 # Configure - App Intake

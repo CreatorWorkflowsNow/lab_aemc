@@ -5,6 +5,8 @@ nav_order: 160
 ---
 
 # Configure Environments in Prod 
+*Part of: Configuring your production instance*
+{: .fs-4 .fw-300 }
 
 {: .d-inline-block }
 IN PROGRESS
@@ -26,7 +28,7 @@ In this section, you will configure Environments for your Pipeline on your Prod 
 # Configure Dev Environment record 
 
 {: .warning}
->This section is to be completed in your **production** instance where AEMC is installed.
+>This section is to be completed in your **production** instance where AEMC will be running.
 
 {: .highlight}
 > *You will be configuring the **DEV** environment record in your Prod instance.*

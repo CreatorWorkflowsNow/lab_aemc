@@ -2,7 +2,7 @@
 layout: default
 title: Credentials
 nav_order: 150
-permalink: /docs/credentials
+permalink: /lab_aemc/docs/credentials
 ---
 
 # Configure Credentials
@@ -85,5 +85,5 @@ Only users assigned the **admin** role can create and update Credential Alias re
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
-[PREVIOUS]: /docs/configure-aes
-[NEXT]: /docs/pipelines-deployments
+[PREVIOUS]: /lab_aemc/docs/configure-aes
+[NEXT]: /lab_aemc/docs/pipelines-deployments

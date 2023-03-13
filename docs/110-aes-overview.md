@@ -2,7 +2,7 @@
 layout: default
 title: AES Overview
 nav_order: 110
-permalink: /lab_aemc/docs/aes-overview
+permalink: /docs/aes-overview
 ---
 
 # App Engine Studio Overview

@@ -2,7 +2,7 @@
 layout: default
 title: Credentials
 nav_order: 150
-permalink: /lab_aemc/docs/credentials
+permalink: /docs/credentials
 ---
 
 # Configure Credentials

@@ -2,7 +2,7 @@
 layout: default
 title: Install Requirements
 nav_order: 130
-permalink: /lab_aemc/docs/install-reqs
+permalink: /docs/install-reqs
 ---
 
 # Install Requirements

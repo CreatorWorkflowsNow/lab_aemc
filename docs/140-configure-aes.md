@@ -2,7 +2,7 @@
 layout: default
 title: App Engine Studio
 nav_order: 140
-permalink: /lab_aemc/docs/configure-aes
+permalink: /docs/configure-aes
 ---
 
 # Configure App Engine Studio

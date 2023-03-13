@@ -1,7 +1,10 @@
 ---
 layout: default
 title: Environments in Prod
-nav_order: 160
+nav_order: 220
+parent: Configure Prod
+grand_parent: Pipelines & Deployments
+permalink: /docs/Configure_Prod_Environments
 ---
 
 # Configure Environments in Prod 
@@ -9,8 +12,8 @@ nav_order: 160
 {: .fs-4 .fw-300 }
 
 {: .d-inline-block }
-IN PROGRESS
-{: .label .label-yellow }
+READY
+{: .label .label-green }
 
 {: .note}
 > *At times in the lab, the term 'instance' and 'environment' are used interchangeably.  They both refer to a ServiceNow instance.*
@@ -147,7 +150,7 @@ In this section, you will configure Environments for your Pipeline on your Prod 
 
 ***Next up, you will configure the Pipeline in the Prod environment.***
 
-[Previous][PREVIOUS]{: .btn .mr-4 }
+<!-- [Previous][PREVIOUS]{: .btn .mr-4 } --> 
 [Next][NEXT]{: .btn .btn-purple }
 
 --- 

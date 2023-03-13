@@ -1,8 +1,12 @@
 ---
 layout: default
 title: Pipeline in Prod
-nav_order: 170
+nav_order: 230
+parent: Configure Prod
+grand_parent: Pipelines & Deployments
+permalink: /docs/Configure_Prod_Pipeline
 ---
+
 
 # Configure Pipeline
 *Part of: Configuring your production instance*
@@ -11,6 +15,10 @@ nav_order: 170
 {: .d-inline-block }
 WORK IN PROGRESS
 {: .label .label-yellow }
+
+{: .d-inline-block }
+80% complete
+{: .label .label-red }
 
 <!-->
 {: .important}
@@ -233,5 +241,5 @@ Additional Notes
 > If you have **more than one** Production environment, then AEMC will only be the controller on a single instance for all of your other Prods. 
 
 
-[PREVIOUS]: ../160_Environments
-[NEXT]: ../190_App_Intake
+[PREVIOUS]: ../docs/Configure_Prod_Environments
+[NEXT]: ../docs/Configure_Prod_AES_Admin

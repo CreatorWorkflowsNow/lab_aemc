@@ -3,6 +3,7 @@ layout: default
 title: App Intake
 nav_order: 300
 nav_exclude: true 
+permalink: /docs/app-intake
 ---
 
 # Configure - App Intake

@@ -4,7 +4,7 @@ title: Configure non-Prod
 nav_order: 270
 parent: Pipelines & Deployments
 has_children: false
-permalink: /docs/Configure_nonProd
+permalink: /docs/configure-non-prod
 ---
 
 # Configure non-Prod

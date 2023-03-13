@@ -2,7 +2,7 @@
 layout: default
 title: Install Requirements
 nav_order: 130
-permalink: /docs/install_reqs
+permalink: /docs/install-reqs
 ---
 
 # Install Requirements
@@ -100,5 +100,5 @@ Repeat this process on all instances for cloning purposes.
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
-[PREVIOUS]: /docs/personas_roles
-[NEXT]: /docs/configure_aes
+[PREVIOUS]: /docs/personas-roles
+[NEXT]: /docs/configure-aes

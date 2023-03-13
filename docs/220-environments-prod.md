@@ -4,7 +4,7 @@ title: Environments
 nav_order: 220
 parent: Configure Prod
 grand_parent: Pipelines & Deployments
-permalink: /docs/Configure_Prod_Environments
+permalink: /docs/configure-prod-environments
 ---
 
 # Configure Environments in Prod 
@@ -158,4 +158,4 @@ In this section, you will configure Environments for your Pipeline on your Prod 
 {: .note}
 *For more information about Environments, see [[Product Documentation: Define environments]](https://docs.servicenow.com/csh?topicname=create-environment.html)*
 
-[NEXT]: /docs/Configure_Prod_Pipeline
+[NEXT]: /docs/configure-prod-pipeline

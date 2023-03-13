@@ -85,5 +85,5 @@ Only users assigned the **admin** role can create and update Credential Alias re
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
-[PREVIOUS]: ../140_Configure_AES
-[NEXT]: ../160_Environments_Prod
+[PREVIOUS]: /docs/configure-aes
+[NEXT]: /docs/pipelines-deployments

@@ -2,7 +2,7 @@
 layout: default
 title: Personas & Roles
 nav_order: 120
-permalink: /docs/personas_roles
+permalink: /docs/personas-roles
 ---
 
 # Personas and Roles
@@ -104,5 +104,5 @@ platform
 [Previous][PREVIOUS]{: .btn .mr-4 }
 [Next][NEXT]{: .btn .btn-purple }
 
-[PREVIOUS]: /docs/aes_overview
-[NEXT]: /docs/install_reqs
+[PREVIOUS]: /docs/aes-overview
+[NEXT]: /docs/install-reqs

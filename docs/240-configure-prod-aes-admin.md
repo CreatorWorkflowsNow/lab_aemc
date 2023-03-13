@@ -4,7 +4,7 @@ title: AES Admin in Prod
 nav_order: 240
 parent: Configure Prod
 grand_parent: Pipelines & Deployments
-permalink: /docs/Configure_Prod_AES_Admin
+permalink: /docs/configure-prod-aes-admin
 ---
 
 # Configure Pipeline
@@ -58,5 +58,5 @@ Additional Notes
 > Go here!
 
 
-[PREVIOUS]: ../docs/Configure_Prod_Pipeline
-[NEXT]: ../docs/Configure_nonProd
+[PREVIOUS]: /docs/configure-prod-pipeline
+[NEXT]: /docs/configure-non-prod

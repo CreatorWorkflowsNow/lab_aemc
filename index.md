@@ -4,8 +4,9 @@ title: Home
 nav_order: 0
 ---
 
-# App Engine Management Center
+# App Engine Governance
 {: .fs-9 }
+
 
 In this lab, you will get hands-on experience setting up and managing AEMC.
 {: .fs-6 .fw-300 }

@@ -8,7 +8,7 @@ permalink: /docs/configure-prod-environments
 ---
 
 # Configure Environments in Prod 
-*Part of: Configuring your production instance*
+*Part of: Configuring Prod*
 {: .fs-4 .fw-300 }
 
 {: .d-inline-block }

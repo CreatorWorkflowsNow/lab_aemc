@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Pipeline in Prod
+title: Pipeline
 nav_order: 230
 parent: Configure Prod
 grand_parent: Pipelines & Deployments
@@ -8,8 +8,8 @@ permalink: /docs/configure-prod-pipeline
 ---
 
 
-# Configure Pipeline
-*Part of: Configuring your production instance*
+# Configure Prod Pipeline
+*Part of: Configuring Prod*
 {: .fs-4 .fw-300 }
 
 {: .d-inline-block }

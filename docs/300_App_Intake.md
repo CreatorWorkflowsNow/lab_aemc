@@ -2,7 +2,7 @@
 layout: default
 title: App Intake
 nav_order: 300
-nav_exclude: true 
+nav_exclude: false
 permalink: /docs/app-intake
 ---
 
@@ -18,15 +18,13 @@ WORK IN PROGRESS
 1. TOC
 {:toc}
 
----
+| 1) Click 'All' |
+| 2) Type 'Applicatoin Intake' | 
+| 3) Click 'Guided Setup' | ![](../assets/images/2023-03-13-13-56-39.png)
+| 4) h | w
 
-# first thing
-
-# second thing
-
-## another thing
 
 [Previous][PREVIOUS]{: .btn .mr-4 }
 
-[PREVIOUS]: ../150_Pipeline_and_Deployment
+[PREVIOUS]: /lab_aemc/docs/configure-non-prod
 [NEXT]: ../../lab_2_manage

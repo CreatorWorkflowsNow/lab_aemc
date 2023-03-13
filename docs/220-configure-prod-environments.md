@@ -8,8 +8,6 @@ permalink: /docs/configure-prod-environments
 ---
 
 # Configure Environments in Prod 
-*Part of: Configuring Prod*
-{: .fs-4 .fw-300 }
 
 {: .d-inline-block }
 READY
@@ -139,16 +137,15 @@ In this section, you will configure Environments for your Pipeline on your Prod 
 
 | 23) Click **Submit** to finish creating the '*Prod*' environment record | ![](../assets/images/2023-03-12-16-59-46.png)
 
-***You have now created your Prod environment record in your Prod environment.***
+***You have now created your Prod Environment record in your prod environment.***
 
 | 24) Click the top-right 'X' to close the modal. | ![](../assets/images/2023-03-12-17-09-24.png)
 
 | 25) In the '*Configure environments*' section', Click '**Mark as Complete**' | ![](../assets/images/2023-03-12-17-10-18.png)
 
+That completes setup of your Environment record in the Prod environment.
 
-***That completes setup of your Environment record in the Prod environment.***
-
-***Next up, you will configure the Pipeline in the Prod environment.***
+Next up, you will configure the Pipeline in the Prod environment.
 
 [Next][NEXT]{: .btn .btn-purple }
 
@@ -158,4 +155,4 @@ In this section, you will configure Environments for your Pipeline on your Prod 
 {: .note}
 *For more information about Environments, see [[Product Documentation: Define environments]](https://docs.servicenow.com/csh?topicname=create-environment.html)*
 
-[NEXT]: /docs/configure-prod-pipeline
+[NEXT]: /lab_aemc/docs/configure-prod-pipeline

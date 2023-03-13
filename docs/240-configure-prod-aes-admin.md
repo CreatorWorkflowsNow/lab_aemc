@@ -8,8 +8,6 @@ permalink: /docs/configure-prod-aes-admin
 ---
 
 # Configure Pipeline
-*Part of: Configuring your production instance*
-{: .fs-4 .fw-300 }
 
 {: .d-inline-block }
 WORK IN PROGRESS
@@ -42,21 +40,13 @@ If group membership is empty in the production instance, or if the Deployment Pi
 | 5) In the '*Add users to the App Engine Admins group*' section, click **Complete** | ![](../assets/images/2023-03-12-21-07-42.png)
 | 6) Click '*Pipelines and Deployments Guided Setup*' at the top of the page |![](../assets/images/2023-03-12-21-08-59.png)
 
-Congratulations! Your Production instance is configure for App Engine!
+**Congratulations! Your Production instance is configure for App Engine!**
 
-Next, you will configure your non-production instances.  These are also sometimes referred to as Subproduction. 
+**Next, you will configure your non-production instances. These are also sometimes referred to as Subproduction.**
 
 
 [Previous][PREVIOUS]{: .btn .mr-4 }
-<!-- [Next][NEXT]{: .btn .btn-purple }
--->
+[Next][NEXT]{: .btn .btn-purple }
 
----
-Additional Notes
-
-{: .note}
-> Go here!
-
-
-[PREVIOUS]: /docs/configure-prod-pipeline
-[NEXT]: /docs/configure-non-prod
+[PREVIOUS]: /lab_aemc/docs/configure-prod-pipeline
+[NEXT]: /lab_aemc/docs/configure-non-prod

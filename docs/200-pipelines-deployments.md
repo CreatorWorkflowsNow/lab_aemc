@@ -7,3 +7,5 @@ permalink: /docs/pipelines-deployments
 ---
 
 # Pipelines & Deployments
+
+Configure Prod, then non-Prod.

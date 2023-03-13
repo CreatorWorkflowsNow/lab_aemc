@@ -9,12 +9,16 @@ permalink: /docs/configure-non-prod
 
 # Configure non-Prod
 
+In each sub-production instance, set up and configure the Environment record which will point to the controller instance ([production] instance), where the Deployment Pipeline configurations reside.
+
+All deployment requests are routed through the controller instance. Until this is configured, your developers will not be able to submit deployment requests.
+
 # Environment setup
 
-{: .highlight}
-> *Each step below will need to be completed on each Subproduction instance in your environment.*
+{: .warning}
+> ***Each step below will need to be completed on each Subproduction in your Pipeline.***
 
-| 1) Log in to the environment |
+| 1) Log in to the Subprod environment |
 | 2) Click 'All', Type 'pipeline' | ![](../assets/images/2023-03-12-21-33-52.png)
 | 3) Click 'Guided Setup' | ![](../assets/images/2023-03-12-21-33-52.png)
 | 4) In the section '*Configuring your non-production instances*', click **Get Started** | ![](../assets/images/2023-03-13-10-21-23.png)
@@ -68,4 +72,76 @@ permalink: /docs/configure-non-prod
 >
 > That error can be safely ignored.
 
-| ![](/assets/images/2023-03-13-10-48-10.png)
+| **Example error**
+| ![](../assets/images/2023-03-13-10-48-10.png)
+
+**Repeat the above content on this page on each sub-production instance that will be part of a pipeline**
+
+{: .highlight}
+> Follow the instructions below **ONLY** in your Test environment.
+
+| 15) If this is **NOT** a Test environment, skip to **Step 19**. 
+
+| 16) If this is a Test environment, click **Configure**. | ![](../assets/images/2023-03-13-13-09-21.png)
+| 17) Check both boxes and click **Save** | ![](../assets/images/2023-03-13-13-11-00.png)
+
+| ![](../assets/images/2023-03-13-13-11-23.png)
+
+**Enable ATF properties in your production instance if you plan to clone!**
+
+| 18) Click the 'X' in the top right to close the modal. | ![](../assets/images/2023-03-13-13-11-52.png)
+| 19) Click **Mark as Complete** | ![](../assets/images/2023-03-13-12-50-40.png) 
+
+{: .note}
+Ensure that the controller instance was configured on all sub-production instances that are part of a pipeline!
+
+
+
+ 
+[Previous][PREVIOUS]{: .btn .mr-4 }
+<!-- [Next][NEXT]{: .btn .btn-purple }
+-->
+
+---
+# Additional Notes 
+
+{: .important}
+Only users assigned the **admin** role can create and update Credential Alias records.
+
+## Credential Alias
+
+If a Credential Alias record for the controller (production) instance has not been created in each sub-production instance, you must create a Credential Alias record pointing to the controller instance in each sub-production instance.
+
+{: .note-title}
+## Cloning
+
+If App Engine Studio is the only application using the Credentials table, consider creating data preservers for Credential Alias, Basic Auth, and Discovery credentials -- otherwise, ensure that these tables are not overwritten when the production instance is cloned down to sub-production instances.
+
+App Engine Studio has data preservers on the following tables:
+-   Pipeline Instance
+-   Request Authorization Key
+-   Deployment Request
+-   Deployment Environment Request
+
+To ensure application and developer data is not lost in development environments during a clone, add **data preservers** to the following:
+
+-   Collaboration Descriptor tables:
+-   App Collaboration Descriptors **[sys_appcollab_descriptor]**
+-   App Collaboration Descriptor Permissions **[sys_appcollab_permission_m2m]**
+-   Collaboration Users and Groups tables:
+-   App Collaboration Users **[sys_appcollab_user]**
+-   App Collaboration Groups **[sys_appcollab_group]**
+
+Additionally, add **clone excludes** for the following Collaboration Descriptor tables. so that data in these tables are preserved after cloning and that no data from the source instance gets copied over. It is ok to have data merge from source and target for collaboration users and groups tables.
+
+-   App Collaboration Descriptors **[sys_appcollab_descriptor]**
+-   App Collaboration Descriptor Permissions **[sys_appcollab_permission_m2m]**
+
+After cloning, a post-clone clean-up script is needed to reassign users and groups the appropriate delegated development permissions. We assume that in-development applications are backed up before cloning and users/groups are same between target and source instance.
+
+***Note:** New App Engine Studio customers (Tokyo +) will only have data preservers on the tables listed above. Existing customers (pre-Tokyo) will also have data preservers on the following tables : Pipeline, Environment. Pipeline Environment Order, Pipeline Types*
+
+
+
+[PREVIOUS]: /lab_aemc/docs/configure-prod-aes-admin
+[NEXT]: /lab_aemc/docs/configure-prod-aes-admin

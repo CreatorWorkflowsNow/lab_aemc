@@ -11,6 +11,10 @@ permalink: /docs/install-reqs
 Published 3/10/23
 {: .label .label-green }
 
+{: .d-inline-block }
+Needs Improvement
+{: .label .label-yellow }
+
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -88,6 +92,17 @@ Use the search criteria to find the App Engine Management Center application. Cl
 ![](../images/2023-03-03-15-36-59.png)
 
 Repeat this process on all instances for cloning purposes.
+
+**Install the 'Deployment Pipeline' plugin in each instance**
+
+To install the Deployment Pipeline plugin, (*com.snc.deployment-pipeline)*, login to any instance and navigate to **System Definition \Plugins.**
+
+Use the search criteria to find the application. Click **Install**.
+
+Repeat and install the Deployment Pipeline plugin in each sub-production instance.
+
+
+---
 
 *For more information, see:*
 

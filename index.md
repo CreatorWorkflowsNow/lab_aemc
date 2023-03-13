@@ -7,12 +7,11 @@ nav_order: 0
 # App Engine Governance
 {: .fs-9 }
 
-
-In this lab, you will get hands-on experience setting up and managing AEMC.
-{: .fs-6 .fw-300 }
+In this lab, you will get hands-on experience setting up and managing App Engine Management Center (AEMC) and App Engine Studio (AES).
+{: .fs-5 .fw-300 }
 
 We will cover concepts such as Pipelines and Deployments, Onboarding Developers, and Collaborations.
-{: .fs-6 .fw-300 }
+{: .fs-5 .fw-300 }
 
 {: .highlight }
 > The content in this guide applies to App Engine Studio Version 22.0.3
@@ -40,4 +39,4 @@ We will cover concepts such as Pipelines and Deployments, Onboarding Developers,
 [Lab5]: ./lab_5_Bonus_Info/
 -->
 
-[LETSGO]: /docs/aes_overview
+[LETSGO]: /docs/aes-overview

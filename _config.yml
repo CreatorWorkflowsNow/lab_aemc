@@ -17,9 +17,9 @@ remote_theme: just-the-docs/just-the-docs
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: App Governance Lab
-#description: Hello World Description
 baseurl: "/lab_aemc" # the subpath of your site, e.g. /blog
 url: https://creatorworkflowsnow.github.io/lab_aemc/
+#description: Hello World Description
 
 permalink: pretty
 

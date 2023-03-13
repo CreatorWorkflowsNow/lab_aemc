@@ -2,7 +2,7 @@
 layout: default
 title: Personas & Roles
 nav_order: 120
-permalink: /lab_aemc/docs/personas-roles
+permalink: /lab_aemc/docs/personas-and-roles
 ---
 
 # Personas and Roles

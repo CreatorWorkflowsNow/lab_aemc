@@ -5,11 +5,14 @@ nav_order: 120
 permalink: /docs/personas-and-roles
 ---
 
-# Personas and Roles
-
 {: .d-inline-block }
-Published 3/10/23
+# Personas and Roles
+{: .d-inline-block }
+Published 3/10/2023
 {: .label .label-green }
+
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
 
 {: .highlight}
 > This part of the lab is for information purposes only. 
@@ -101,8 +104,8 @@ platform
 
 ---
 
-[Previous][PREVIOUS]{: .btn .mr-4 }
-[Next][NEXT]{: .btn .btn-purple }
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
 
-[PREVIOUS]: /lab_aemc/docs/aes-overview
+[PREV]: /lab_aemc/docs/aes-overview
 [NEXT]: /lab_aemc/docs/install-reqs

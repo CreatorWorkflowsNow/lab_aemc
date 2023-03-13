@@ -5,11 +5,14 @@ nav_order: 110
 permalink: /docs/aes-overview
 ---
 
-# App Engine Studio Overview
-
 {: .d-inline-block }
-Published 3/10/23
+# App Engine Studio Overview
+{: .d-inline-block }
+Published 3/10/2023
 {: .label .label-green }
+
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
 
 {: .highlight}
 > This part of the lab is for information purposes only. 
@@ -35,8 +38,10 @@ Since development is supported between the two environments, low-code and pro-co
 
 All configurations to an application, whether performed in App Engine Studio or ServiceNow Studio, can be captured in the same private application scope. Application artifacts configured in App Engine Studio can also be managed in ServiceNow Studio. However, some application artifacts can only be accessed and configured in ServiceNow Studio. These include business rules, notifications, and service portal pages. 
 
-[Previous][PREVIOUS]{: .btn .mr-4 }
-[Next][NEXT]{: .btn .btn-purple }
+---
 
-[PREVIOUS]: /lab_aemc/
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
+
+[PREV]: /lab_aemc/
 [NEXT]: /lab_aemc/docs/personas-and-roles

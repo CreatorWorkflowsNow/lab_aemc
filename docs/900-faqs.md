@@ -2,13 +2,18 @@
 layout: default
 title: FAQs
 nav_order: 900
+permalink: /docs/faqs
 ---
 
+{: .d-inline-block }
 # FAQs
 {: .no_toc }
 {: .d-inline-block }
-Published 3/10/23
+Published 3/13/2023
 {: .label .label-green }
+
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -78,3 +83,9 @@ If you plan on cloning your production instance to one or more sub-production in
 Additionally, the AEMC plugin must be installed on all instances to appropriately collect application and developer data on development. For more information, see [[Product Documentation: System clone]](https://docs.servicenow.com/csh?topicname=c_SystemClone.html)
 
 Consider enabling and configuring Instance Scan properties in your production instance if you plan to clone.
+
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
+
+[PREV]: /lab_aemc/docs/app-intake
+[NEXT]: /lab_aemc/docs/references

@@ -4,8 +4,13 @@ title: Home
 nav_order: 0
 ---
 
+{: .d-inline-block }
 # App Engine Governance
-{: .fs-9 }
+{: .d-inline-block }
+DRAFT
+{: .label .label-red }
+
+[Let's Go!][LETSGO]{: .btn .btn-green .fs-2}
 
 In this lab, you will get hands-on experience setting up and managing App Engine Management Center (AEMC) and App Engine Studio (AES).
 {: .fs-5 .fw-300 }
@@ -16,7 +21,6 @@ We will cover concepts such as Pipelines and Deployments, Onboarding Developers,
 {: .highlight }
 > The content in this guide applies to App Engine Studio Version 22.0.3
 
-[Let's Go!][LETSGO]{: .btn .btn-green}
 
 <!-- Wrap text
 |Name|Description| |

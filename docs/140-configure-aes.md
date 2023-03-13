@@ -5,11 +5,14 @@ nav_order: 140
 permalink: /docs/configure-aes
 ---
 
-# Configure App Engine Studio
-
 {: .d-inline-block }
-Published 3/10/23
+# App Engine Studio
+{: .d-inline-block }
+Published 3/10/2023
 {: .label .label-green }
+
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
 
 *In this lab, we will review and update App Engine Studio developer access to builder tools during development.*
 
@@ -144,8 +147,10 @@ Published 3/10/23
 
 **Congratulations!  App Engine Studio is ready to go in your Dev environment!**
 
-[Previous][PREVIOUS]{: .btn .mr-4 }
-[Next][NEXT]{: .btn .btn-purple }
+---
 
-[PREVIOUS]: /lab_aemc/docs/install-reqs
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
+
+[PREV]: /lab_aemc/docs/install-reqs
 [NEXT]: /lab_aemc/docs/credentials

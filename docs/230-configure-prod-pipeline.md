@@ -7,11 +7,14 @@ grand_parent: Pipelines & Deployments
 permalink: /docs/configure-prod-pipeline
 ---
 
-# Configure Prod Pipeline
-
 {: .d-inline-block }
-READY
+# Configure Prod Pipeline
+{: .d-inline-block }
+Published 3/13/2023
 {: .label .label-green }
+
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
 
 <!-->
 {: .important}
@@ -72,9 +75,6 @@ Congratulations! You have created a new **Pipeline** in your Prod environment.
 
 Next, we will configure the **AES Admins** group in Prod. 
 
-[Next][NEXT]{: .btn .btn-purple }
-
-
 # Additional Notes
 
 {: .note}
@@ -89,8 +89,10 @@ Next, we will configure the **AES Admins** group in Prod.
 >
 > If you have **more than one** Production environment, then AEMC will only be the controller on a single instance for all of your other Prods. 
 
-[Previous][PREVIOUS]{: .btn .mr-4 }
-[Next][NEXT]{: .btn .btn-purple }
+---
 
-[PREVIOUS]: /lab_aemc/docs/configure-prod-environments
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
+
+[PREV]: /lab_aemc/docs/configure-prod-environments
 [NEXT]: /lab_aemc/docs/configure-prod-aes-admin

@@ -3,9 +3,17 @@ layout: default
 title: How to get Lab Instance
 parent: References
 nav_order: 930
+permalink: /docs/how-to-get-lab-instance
 ---
 
+{: .d-inline-block }
 # How to get your Lab instance
+{: .d-inline-block }
+Published 3/13/2023
+{: .label .label-green }
+
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
 
 Your instructor will provide you with a URL that will load a form similar to below. 
 
@@ -25,3 +33,10 @@ You will be presented with a final screen containing the URL for your **Dev** an
 ![](../assets/images/2023-03-06-16-45-23.png)
 
 You may click on the "Magic Link" to be taken directly to the instance and automatically logged in. 
+
+
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
+
+[PREV]: /lab_aemc/docs/setup-order
+[NEXT]: /lab_aemc/docs/sys-admin-guide

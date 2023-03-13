@@ -5,11 +5,14 @@ nav_order: 150
 permalink: /docs/credentials
 ---
 
-# Configure Credentials
-
 {: .d-inline-block }
-Published 3/10/23
+# Configure Credentials
+{: .d-inline-block }
+Published 3/10/2023
 {: .label .label-green }
+
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
 
 *Credentials allow App Engine Studio and App Engine Management Center to communicate.*
 
@@ -41,8 +44,8 @@ Published 3/10/23
 > Remember to complete the steps above in all of your Lab environments before continuing to the next exercise. 
 >
 
-[Previous][PREVIOUS]{: .btn .mr-4 }
-[Next][NEXT]{: .btn .btn-purple }
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
 
 ---
 # Additional Notes 
@@ -82,8 +85,10 @@ Only users assigned the **admin** role can create and update Credential Alias re
 {: .note}
 *For more information, see [[Product Documentation: Create a Connection & Credential Alias]](https://docs.servicenow.com/csh?topicname=connection-alias.html)*
 
-[Previous][PREVIOUS]{: .btn .mr-4 }
-[Next][NEXT]{: .btn .btn-purple }
+---
 
-[PREVIOUS]: /lab_aemc/docs/configure-aes
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
+
+[PREV]: /lab_aemc/docs/configure-aes
 [NEXT]: /lab_aemc/docs/pipelines-deployments

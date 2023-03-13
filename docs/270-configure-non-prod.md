@@ -7,11 +7,18 @@ has_children: false
 permalink: /docs/configure-non-prod
 ---
 
-# Configure non-Prod
+{: .d-inline-block }
+# Configure non-Prod Controller
+{: .d-inline-block }
+Published 3/13/2023
+{: .label .label-green }
 
-In each sub-production instance, set up and configure the Environment record which will point to the controller instance ([production] instance), where the Deployment Pipeline configurations reside.
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
 
-All deployment requests are routed through the controller instance. Until this is configured, your developers will not be able to submit deployment requests.
+*In each sub-production instance, set up and configure the Environment record which will point to the controller instance ([production] instance), where the Deployment Pipeline configurations reside.*
+
+*All deployment requests are routed through the controller instance. Until this is configured, your developers will not be able to submit deployment requests.*
 
 # Environment setup
 
@@ -95,13 +102,6 @@ All deployment requests are routed through the controller instance. Until this i
 {: .note}
 Ensure that the controller instance was configured on all sub-production instances that are part of a pipeline!
 
-
-
- 
-[Previous][PREVIOUS]{: .btn .mr-4 }
-<!-- [Next][NEXT]{: .btn .btn-purple }
--->
-
 ---
 # Additional Notes 
 
@@ -141,7 +141,10 @@ After cloning, a post-clone clean-up script is needed to reassign users and grou
 
 ***Note:** New App Engine Studio customers (Tokyo +) will only have data preservers on the tables listed above. Existing customers (pre-Tokyo) will also have data preservers on the following tables : Pipeline, Environment. Pipeline Environment Order, Pipeline Types*
 
+---
 
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
 
-[PREVIOUS]: /lab_aemc/docs/configure-prod-aes-admin
-[NEXT]: /lab_aemc/docs/configure-prod-aes-admin
+[PREV]: /lab_aemc/docs/configure-prod-aes-admin
+[NEXT]: /lab_aemc/docs/app-intake

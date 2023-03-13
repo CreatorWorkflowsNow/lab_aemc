@@ -7,16 +7,14 @@ grand_parent: Pipelines & Deployments
 permalink: /docs/configure-prod-aes-admin
 ---
 
-# Configure Pipeline
-
 {: .d-inline-block }
-WORK IN PROGRESS
-{: .label .label-yellow }
-
+# Configure Prod AES Admin Group
 {: .d-inline-block }
-5% complete
-{: .label .label-red }
+Published 3/13/2023
+{: .label .label-green }
 
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
 
 # Add users to the App Engine Studio Administrators group
 
@@ -44,9 +42,10 @@ If group membership is empty in the production instance, or if the Deployment Pi
 
 **Next, you will configure your non-production instances. These are also sometimes referred to as Subproduction.**
 
+---
 
-[Previous][PREVIOUS]{: .btn .mr-4 }
-[Next][NEXT]{: .btn .btn-purple }
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
 
-[PREVIOUS]: /lab_aemc/docs/configure-prod-pipeline
+[PREV]: /lab_aemc/docs/configure-prod-pipeline
 [NEXT]: /lab_aemc/docs/configure-non-prod

@@ -4,14 +4,24 @@ title: Sys Admin Guide Import
 parent: References
 nav_order: 999
 nav_exclude: false
+permalink: /docs/sys-admin-guide
 ---
+
+{: .d-inline-block }
+# Setup order
+{: .d-inline-block }
+Published 3/13/2023
+{: .label .label-green }
+
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
 
 ServiceNow App Engine Governance Lab
 {: .fs-10 }
 {: .no_toc }
 
 {: .note }
-The following content is certified for the Tokyo release of ServiceNow.
+The following content is PDF to Word to Markdown conversion of the App Engine Sys Admin guide. 
 
 {: .highlight }
 The content in this guide applies to App Engine Studio v22.0.3.
@@ -1170,3 +1180,8 @@ If the out-of-box test suite is not modified, they will run but will also not af
 **Can I change the instance where ATF tests and Instance Scan definitions are executed?**
 
 Yes, this can be accomplished by updating the 'Instance Type' value for an Environment record to 'Testing'. Alternatively, the decision table can be modified to make the decision for 'Instance Type = Staging' (for example) point to the Testing sub-flow.
+
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+
+[PREV]: /lab_aemc/docs/how-to-get-lab-instance
+[NEXT]: /lab_aemc/

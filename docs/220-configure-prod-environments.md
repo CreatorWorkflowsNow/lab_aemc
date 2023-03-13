@@ -7,22 +7,25 @@ grand_parent: Pipelines & Deployments
 permalink: /docs/configure-prod-environments
 ---
 
-# Configure Environments in Prod 
-
 {: .d-inline-block }
-READY
+# Configure Prod Environments 
+{: .d-inline-block }
+Published 3/13/2023
 {: .label .label-green }
+
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
 
 {: .note}
 > *At times in the lab, the term 'instance' and 'environment' are used interchangeably.  They both refer to a ServiceNow instance.*
 
-Environment ```[sn_pipeline_environment]``` records contain information about a ServiceNow instance and how to access it. 
+*Environment ```[sn_pipeline_environment]``` records contain information about a ServiceNow instance and how to access it.*
 
-Together, they make up a Pipeline. You must first configure the Environment records before the Pipeline can be setup. 
+*Together, they make up a Pipeline. You must first configure the Environment records before the Pipeline can be setup.*
 
-Environment records do not sync across instances so creation is required on all instances (production and sub-production).
+*Environment records do not sync across instances so creation is required on all instances (production and sub-production).*
 
-In this section, you will configure Environments for your Pipeline on your Prod instance. 
+*In this section, you will configure Environments for your Pipeline on your Prod instance.*
 
 ---
 
@@ -147,12 +150,15 @@ That completes setup of your Environment record in the Prod environment.
 
 Next up, you will configure the Pipeline in the Prod environment.
 
-[Next][NEXT]{: .btn .btn-purple }
-
---- 
 # Additional Notes
 
 {: .note}
 *For more information about Environments, see [[Product Documentation: Define environments]](https://docs.servicenow.com/csh?topicname=create-environment.html)*
 
+--- 
+
+[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Next][NEXT]{: .btn .btn-purple .fs-2}
+
+[PREV]: /lab_aemc/docs/configure-prod
 [NEXT]: /lab_aemc/docs/configure-prod-pipeline

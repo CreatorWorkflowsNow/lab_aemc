@@ -14,12 +14,12 @@ Published 3/10/2023
 [Previous][PREV]{: .btn .mr-4 .fs-2}
 [Next][NEXT]{: .btn .btn-purple .fs-2}
 
-*Credentials allow App Engine Studio and App Engine Management Center to communicate.*
-
 {: .important}
 > Complete the steps below in all of your Lab environments.  
 >
 > Start with Prod, then Test, then Dev.
+
+*Credentials allow App Engine Studio and App Engine Management Center to communicate.*
 
 | 1) Navigate to **All** 
 | 2) Type **Connections & Credentials** 

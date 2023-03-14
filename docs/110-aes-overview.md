@@ -11,7 +11,7 @@ permalink: /docs/aes-overview
 Published 3/10/2023
 {: .label .label-green }
 
-[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Previous][PREV]{: .btn .mr-2 .fs-2}
 [Next][NEXT]{: .btn .btn-purple .fs-2}
 
 {: .highlight}

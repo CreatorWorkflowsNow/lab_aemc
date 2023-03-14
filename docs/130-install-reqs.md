@@ -14,16 +14,15 @@ Published 3/13/2023
 [Previous][PREV]{: .btn .mr-4 .fs-2}
 [Next][NEXT]{: .btn .btn-purple .fs-2}
 
-Before installing App Engine Studio, review all platform requirements and define an organizational instance strategy to prepare for successful installation and configuration.
-
 {: .highlight}
-> The 'Install Requirements' below are for reference only. No actual activity required on this page. 
+> This part of the lab is for information purposes only. 
 >
-> The steps were completed for you already as part of the Lab setup. 
->
-> However, we **highly** encourage reviewing the information below before attempting a live install. 
+> No activity required.
 
-## Table of contents
+{: .important}
+> Before installing App Engine Studio, review all platform requirements and define an organizational instance strategy to prepare for successful installation and configuration.
+
+# Table of contents
 {: .no_toc .text-delta }
 
 1. TOC

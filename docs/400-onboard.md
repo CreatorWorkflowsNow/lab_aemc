@@ -10,8 +10,8 @@ permalink: /docs/onboard-dev
 # Onboard a developer
 {: .no_toc }
 {: .d-inline-block }
-WIP
-{: .label .label-yellow }
+PUBLISHED 2023/03/14
+{: .label .label-green }
 
 [Previous][PREV]{: .btn .mr-2 .fs-2}
 [Next][NEXT]{: .btn .btn-purple .fs-2}
@@ -62,9 +62,19 @@ Jayne is our App Engine Admin that we configured earlier. She is not a Platform 
 This will open AEMC in a new browser tab.
 
 | 20) In the 'Intake application requests' widget, click Sydney's request to open it. | ![](../assets/images/2023-03-14-12-49-13.png)
+| 21) In the top right, click 'Approve' | ![](../assets/images/2023-03-14-12-50-13.png)
 
+{: .note}
+> The Prod instance will attempt to configure Sydney's App Engine User access on the Dev environment.
 
+{:. highlight}
+In the real world, there might be more than one person to do the approval and more time may be taken to review the answers.
 
+| 22) Close the request tab in AEMC | ![](../assets/images/2023-03-14-12-52-16.png)
+
+**Congratulations! You have onboard Sydney to begin building her first app.  Jayne was able to do this just by clicking Approve on the request.**
+
+---
 
 [Previous][PREV]{: .btn .mr-4 .fs-2}
 [Next][NEXT]{: .btn .btn-purple .fs-2}

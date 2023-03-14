@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Pipeline
+title: 2. Pipeline
 nav_order: 230
 parent: Configure Prod
 grand_parent: Pipelines & Deployments

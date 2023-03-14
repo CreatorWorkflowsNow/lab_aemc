@@ -12,7 +12,7 @@ permalink: /docs/how-to-get-lab-instance
 Published 3/13/2023
 {: .label .label-green }
 
-[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Previous][PREV]{: .btn .mr-2 .fs-2}
 [Next][NEXT]{: .btn .btn-purple .fs-2}
 
 Your instructor will provide you with a URL that will load a form similar to below. 
@@ -35,7 +35,7 @@ You will be presented with a final screen containing the URL for your **Dev** an
 You may click on the "Magic Link" to be taken directly to the instance and automatically logged in. 
 
 
-[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Previous][PREV]{: .btn .mr-2 .fs-2}
 [Next][NEXT]{: .btn .btn-purple .fs-2}
 
 [PREV]: /lab_aemc/docs/setup-order

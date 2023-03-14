@@ -7,13 +7,13 @@ permalink: /docs/app-intake
 ---
 
 {: .d-inline-block }
-# Configure - App Intake
+# App Intake
 {: .no_toc }
 {: .d-inline-block }
 PUBLISHED 2023/03/14
 {: .label .label-green }
 
-[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Previous][PREV]{: .btn .mr-2 .fs-2}
 [Next][NEXT]{: .btn .btn-purple .fs-2}
 
 {: .warning}
@@ -53,8 +53,8 @@ PUBLISHED 2023/03/14
 
 ---
 
-[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Previous][PREV]{: .btn .mr-2 .fs-2}
 [Next][NEXT]{: .btn .btn-purple .fs-2}
 
 [PREV]: /lab_aemc/docs/configure-non-prod
-[NEXT]: /lab_aemc/docs/onboard-dev
+[NEXT]: /lab_aemc/docs/onboarding

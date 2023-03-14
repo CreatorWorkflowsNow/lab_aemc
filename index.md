@@ -41,4 +41,4 @@ Track and manage your App Engine Studio (AES) requests, deployments, application
 |[Lab 5][Lab5]{: .btn .btn-purple } | Application Templates|
 -->
 
-[LETSGO]: ./docs/aes-overview
+[LETSGO]: ./docs/pre-reqs

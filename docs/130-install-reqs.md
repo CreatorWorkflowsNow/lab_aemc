@@ -2,6 +2,7 @@
 layout: default
 title: Install Requirements
 nav_order: 130
+parent: Pre-Reqs
 permalink: /docs/install-reqs
 ---
 
@@ -11,7 +12,7 @@ permalink: /docs/install-reqs
 Published 3/13/2023
 {: .label .label-green }
 
-[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Previous][PREV]{: .btn .mr-2 .fs-2}
 [Next][NEXT]{: .btn .btn-purple .fs-2}
 
 {: .highlight}
@@ -116,7 +117,7 @@ Use the search criteria to find the application. Click **Install**.
 
 Repeat and install the Deployment Pipeline plugin in each sub-production instance.
 
-[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Previous][PREV]{: .btn .mr-2 .fs-2}
 [Next][NEXT]{: .btn .btn-purple .fs-2}
 
 [PREV]: /lab_aemc/docs/personas-and-roles

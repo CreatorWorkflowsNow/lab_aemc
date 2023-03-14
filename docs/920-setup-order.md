@@ -12,7 +12,7 @@ permalink: /docs/setup-order
 Published 3/13/2023
 {: .label .label-green }
 
-[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Previous][PREV]{: .btn .mr-2 .fs-2}
 [Next][NEXT]{: .btn .btn-purple .fs-2}
 
 ![](../assets/images/2023-03-03-16-11-12.png)

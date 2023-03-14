@@ -11,7 +11,7 @@ permalink: /docs/credentials
 Published 3/10/2023
 {: .label .label-green }
 
-[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Previous][PREV]{: .btn .mr-2 .fs-2}
 [Next][NEXT]{: .btn .btn-purple .fs-2}
 
 {: .important}
@@ -44,7 +44,7 @@ Published 3/10/2023
 > Remember to complete the steps above in all of your Lab environments before continuing to the next exercise. 
 >
 
-[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Previous][PREV]{: .btn .mr-2 .fs-2}
 [Next][NEXT]{: .btn .btn-purple .fs-2}
 
 ---
@@ -87,7 +87,7 @@ Only users assigned the **admin** role can create and update Credential Alias re
 
 ---
 
-[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Previous][PREV]{: .btn .mr-2 .fs-2}
 [Next][NEXT]{: .btn .btn-purple .fs-2}
 
 [PREV]: /lab_aemc/docs/configure-aes

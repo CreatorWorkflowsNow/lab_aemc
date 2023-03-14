@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Onboard a developer
-nav_order: 400
+nav_order: 410
 nav_exclude: false
-permalink: /docs/onboard-dev
+parent: Simulation
+permalink: /docs/onboarding
 ---
 
 {: .d-inline-block }
@@ -76,8 +77,8 @@ In the real world, there might be more than one person to do the approval and mo
 
 ---
 
-[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Previous][PREV]{: .btn .mr-2 .fs-2}
 [Next][NEXT]{: .btn .btn-purple .fs-2}
 
 [PREV]: /lab_aemc/docs/app-intake
-[NEXT]: /lab_aemc/docs/faqs
+[NEXT]: /lab_aemc/docs/build-app

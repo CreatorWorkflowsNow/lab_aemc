@@ -2,6 +2,7 @@
 layout: default
 title: AES Overview
 nav_order: 110
+parent: Pre-Reqs 
 permalink: /docs/aes-overview
 ---
 
@@ -40,8 +41,8 @@ All configurations to an application, whether performed in App Engine Studio or 
 
 ---
 
-[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Previous][PREV]{: .btn .mr-2 .fs-2}
 [Next][NEXT]{: .btn .btn-purple .fs-2}
 
-[PREV]: /lab_aemc/
+[PREV]: /lab_aemc/docs/pre-reqs
 [NEXT]: /lab_aemc/docs/personas-and-roles

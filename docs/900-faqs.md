@@ -12,7 +12,7 @@ permalink: /docs/faqs
 Published 3/13/2023
 {: .label .label-green }
 
-[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Previous][PREV]{: .btn .mr-2 .fs-2}
 [Next][NEXT]{: .btn .btn-purple .fs-2}
 
 ## Table of contents
@@ -84,8 +84,8 @@ Additionally, the AEMC plugin must be installed on all instances to appropriatel
 
 Consider enabling and configuring Instance Scan properties in your production instance if you plan to clone.
 
-[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Previous][PREV]{: .btn .mr-2 .fs-2}
 [Next][NEXT]{: .btn .btn-purple .fs-2}
 
-[PREV]: /lab_aemc/docs/app-intake
+[PREV]: /lab_aemc/docs/build-app
 [NEXT]: /lab_aemc/docs/references

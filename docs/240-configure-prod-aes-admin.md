@@ -13,7 +13,7 @@ permalink: /docs/configure-prod-aes-admin
 Published 3/13/2023
 {: .label .label-green }
 
-[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Previous][PREV]{: .btn .mr-2 .fs-2}
 [Next][NEXT]{: .btn .btn-purple .fs-2}
 
 # Add users to the App Engine Studio Administrators group
@@ -44,7 +44,7 @@ If group membership is empty in the production instance, or if the Deployment Pi
 
 ---
 
-[Previous][PREV]{: .btn .mr-4 .fs-2}
+[Previous][PREV]{: .btn .mr-2 .fs-2}
 [Next][NEXT]{: .btn .btn-purple .fs-2}
 
 [PREV]: /lab_aemc/docs/configure-prod-pipeline
